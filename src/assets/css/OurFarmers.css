@@ -1,0 +1,130 @@
+.ourFarm-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 5%;
+}
+
+.ourFarm-section h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 45px;
+  font-family: poppins, sans-serif;
+  color: rgba(0, 0, 0, 0.568);
+}
+
+.ourFarm-section .farm-subtitle {
+  display: block;
+  text-align: center;
+  margin-top: -50px;
+  text-transform: lowercase;
+  font-size: 13px;
+  letter-spacing: 5px;
+  color: grey;
+}
+
+.ourFarm-section .farm-note-description {
+  margin-top: 30px;
+  text-align: center;
+  padding: 0px 20%;
+  text-transform: lowercase;
+  color: rgba(0, 0, 0, 0.747);
+}
+
+.farms-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  background-color: transparent;
+  width: 90%;
+  margin-top: 50px;
+}
+
+.farmer-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  background-color: rgba(211, 211, 211, 0.13);
+  width: 250px;
+  height: 390px;
+  margin: 30px 0px;
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.096);
+}
+
+.farmer-profile-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: transparent;
+    height: 35%;
+    width: 100%;
+}
+.farmer-profile-image .farmer-profile-image-thumbnail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(211, 211, 211, 0.13);
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-top: -30px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.432);
+}
+
+.farmer-profile-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    background-color: transparent;
+
+}
+
+.farmer-profile-role{
+    display: block;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    background-color: transparent;
+    text-transform: lowercase;
+    font-size: 13px;
+    color: grey;
+    padding: 5px 0px;
+
+}
+
+.farmer-profile-description{
+    display: block;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.932);
+    text-transform: lowercase;
+    height: auto;
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 20px;
+}
+
+.farmer-profile a{
+    text-decoration: none;
+}
+
+.farmer-profile a button{
+margin-top: 20px;
+border-radius: 2px;
+outline: none;
+border: none;
+background-color: wheat;
+color: black;
+padding: 5px 20px;
+text-transform: lowercase;
+font-size: 13px;
+cursor: pointer;
+}

@@ -1,0 +1,27 @@
+@import url("./fonts.css");
+@import url("./navBar.css");
+@import url("./HomeBanner.css");
+@import url("./HomeService.css");
+@import url("./HomeWhySection.css");
+@import url("./WhatINspiresUs.css");
+@import url("./OurFarmers.css");
+
+*{
+    font-family: poppins, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    border-spacing: 0px;
+}
+
+button, input, textarea{
+    outline: none;
+}

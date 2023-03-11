@@ -1,0 +1,65 @@
+.home-service-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgoldenrodyellow;
+  padding: 0px 5%;
+  padding-bottom: 20px;
+}
+
+.home-service-section h3 {
+  display: block;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 10px;
+  font-family: poppins, sans-serif;
+  color: grey;
+}
+
+.home-service-section p {
+  margin-top: -20px;
+  width: 50%;
+  text-align: center;
+}
+
+.home-service-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 100%;
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+.home-service-item {
+  background-color: lightcoral;
+  height: 90%;
+  width: 20%;
+}
+
+.home-service-section button {
+  display: inline-block;
+  width: 200px;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  color: rgb(58, 58, 58);
+  border: none;
+  background-color: transparent;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.home-service-section button:hover {
+  background-color: grey;
+  color: white;
+  transition: 0.3s linear;
+}

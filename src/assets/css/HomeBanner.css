@@ -1,0 +1,73 @@
+.homeBanner{
+    background-color: lightgoldenrodyellow;
+    height: 100vh;
+}
+
+.homebanner-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+    padding: 5%7%;
+}
+
+.homebanner-about-floating-image{
+    background-color: lightgrey;
+    height: 500px;
+    width: 27vw;
+    margin-top: -250px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(58, 58, 58, 0.486);
+}
+
+.homebanner-about-small-note{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    background-color: azure;
+    padding: 50px 70px ;
+}
+
+.homebanner-about-small-note .sub-title{
+    display: block;
+    text-transform: capitalize;
+    color: wheat;
+    font-size: 35px;
+}
+
+.homebanner-about-small-note .title{
+    color: grey;
+    font-size: 60px;
+    padding-top: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: poppins,;
+}
+
+.homebanner-about-small-note p{
+    text-transform: capitalize;
+    color: rgb(58, 58, 58);
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.homebanner-about-small-note button{
+    display: inline-block;
+    width: 200px;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    color: rgb(58, 58, 58);
+    border: none;
+    background-color: wheat;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.homebanner-about-small-note button:hover{
+    transition: 0.3s linear;
+    color: grey;
+}
