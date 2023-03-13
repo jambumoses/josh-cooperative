@@ -9,9 +9,10 @@ export default function NavBar() {
           <span className='navbar-mobile-logo'><img src="" alt="" /></span>
 
           <span className='navbar-link'><Link to="/" className='a' href="">home</Link></span>
-          <span className='navbar-link'><Link to="/about" className='a' href="">about</Link></span>
           <span className='navbar-link'><Link to="/blog" className='a' href="">blog</Link></span>
-          <span className='navbar-link'><Link to="/farmers" className='a' href="">farmers</Link></span>
+          <span className='navbar-link'><Link to="/about" className='a' href="">about us</Link></span>
+          <span className='navbar-link'><Link to="/services" className='a' href="">services</Link></span>
+          <span className='navbar-link'><Link to="/contact" className='a' href="">contact us</Link></span>
         </div>
 
         <div>

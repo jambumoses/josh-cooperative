@@ -1,0 +1,248 @@
+.contactBanner-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: -webkit-linear-gradient(bottom,black,rgba(0, 0, 0, 0.658));
+    height: 60vh;
+    width: 100%;
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.479); */
+    z-index: 15;
+}
+
+.contactBanner-image{
+    background-color: transparent;
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+}
+
+.contactBanner-image iframe{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactBanner-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    z-index: 10;
+}
+
+.contactBanner-title h3{
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: poppins, sans-serif;
+    text-transform: capitalize;
+}
+
+
+.contactBanner-section nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    padding: 0px 10%;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+.nav-socials a{
+    text-decoration: none;
+    margin: 0px 5px;
+}
+
+.nav-socials a i{
+    color: lightgray;
+    font-size: 14px;
+}
+
+.contactBanner-section nav span{
+    margin: 0px 5px;
+}
+
+.contactBanner-section nav span .a{
+    font-size: 13px;
+    font-family: poppins, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s linear;
+}
+
+.contactBanner-section nav span .a:hover{
+    color: grey;
+    transition: 0.3s linear;
+}
+
+.contactBanner-section nav span .active{
+    color: lightgreen;
+}
+
+
+.contactInformation-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: black;
+}
+
+.contactInformation-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+    width: 30%;
+    margin: 20px;
+}
+
+.contactInformation-item span{
+    display: block;
+    padding: 10px 0px;
+}
+
+.contactInformation-item-icon i{
+    font-size: 18px;
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+
+.contactInformation-item-title{
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+.contactInformation-item-content{
+    font-size: 13px;
+    font-family: poppins, sans-serif;
+    text-align: center;
+}
+
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.get-in-touch h3{
+    background-color: black;
+    font-size: 30px;
+    font-family: poppins,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.get-in-touch p{
+    color: lightgray;
+    font-size: 14px;
+    width: 450px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+
+
+.contactInformation-form-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    height: 500px;
+    padding: 100px 10%;
+    padding-top: 70px;
+}
+
+.contactInformation-form-bg{
+    width: 50%;
+    background-color: transparent;
+    height: 100%;
+    padding-right: 30px;
+}
+
+.contactInformation-form-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contactInformation-form{
+    width: 50%;
+    background-color: transparent;
+    height: 100%;
+}
+
+.contactInformation-form-input-cont{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    padding-bottom: 20px;
+}
+
+.contactInformation-form-lebal{
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: lightgray;
+}
+
+.contactInformation-form-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactInformation-form-inputs input{
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 3px;
+    padding-left: 10px;
+    width: 45%;
+    color: rgba(0, 0, 0, 0.637);
+    background-color: rgb(241, 241, 241);
+}
+
+.contactInformation-form-inputs textarea{
+    outline: none;
+    border: none;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 140px;
+    max-height: 140px;
+    border-radius: 3px;
+    padding: 10px 10px;
+    color: rgba(0, 0, 0, 0.637);
+    background-color: rgb(241, 241, 241);
+}
+
+.contactInformation-form-inputs button{
+    outline: none;
+    border: none;
+    height: 30px;
+    border-radius: 3px;
+    width: 45%;
+    color: rgba(0, 0, 0, 0.637);
+    background-color: rgb(241, 241, 241);
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+}

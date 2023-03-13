@@ -5,23 +5,28 @@
 @import url("./HomeWhySection.css");
 @import url("./WhatINspiresUs.css");
 @import url("./OurFarmers.css");
+@import url("./Blog.css");
+@import url("./footer.css");
+@import url("./Contact.css");
 
-*{
-    font-family: poppins, sans-serif;
+* {
+  font-family: poppins, sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
-    margin: 0px;
-    padding: 0px;
+html {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
 }
 
-body{
-    margin: 0px;
-    padding: 0px;
-    border-spacing: 0px;
+body {
+  margin: 0px;
+  padding: 0px;
+  border-spacing: 0px;
 }
 
-button, input, textarea{
-    outline: none;
+button,
+input,
+textarea {
+  outline: none;
 }

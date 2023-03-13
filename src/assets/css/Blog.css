@@ -1,0 +1,169 @@
+.blogBanner-section{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.685);
+    height: 60vh;
+    /* margin: 0px 5%; */
+    /* border-bottom: 1px solid rgba(128, 128, 128, 0.479); */
+    z-index: 15;
+}
+
+.blogBanner-image{
+    background-color: transparent;
+    height: 60vh;
+    width: 100%;
+    position: absolute;
+    /* margin: 0px 5%; */
+    z-index: 5;
+}
+
+.blogBanner-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blogBanner-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    z-index: 10;
+}
+
+.blogBanner-title h3{
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: white;
+    font-family: poppins, sans-serif;
+}
+
+.blogBanner-section nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4%;
+    height: 40px;
+    background-color: transparent;
+    color: white;
+    padding: 0px 10%;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+.blogBanner-section nav span{
+    margin: 0px 5px;
+}
+
+.blogBanner-section nav span .a{
+    font-size: 13px;
+    font-family: poppins, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s linear;
+}
+
+.blogBanner-section nav span .a:hover{
+    color: grey;
+    transition: 0.3s linear;
+}
+
+.blogBanner-section nav span .active{
+    color: lightgreen;
+}
+
+.blog-item-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+    padding: 20px 5%;
+}
+
+.blog-item{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 20%;
+    margin: 40px 20px;
+    cursor: pointer;
+}
+
+.blog-item-thumbnail{
+    height: 150px;
+    width: 100%;
+    background-color: lightgoldenrodyellow;
+}
+
+.blog-item-thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-item-title{
+    display: block;
+    padding: 15px 2px;
+    padding-top: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.blog-item-date{
+    display: block;
+    text-align: center;
+    font-family: poppins, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: grey;
+    margin-top: -10px;
+}
+
+
+.blog-item-note{
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.blog-item-note::first-letter{
+    text-transform: uppercase;
+}
+
+
+
+.gotop{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 40px 5%;
+}
+
+.gotop a{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: green;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gotop a i{
+    color: lightgray;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
