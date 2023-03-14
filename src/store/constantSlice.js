@@ -1,4 +1,7 @@
 import {createSlice} from "@reduxjs/toolkit";
+import blogData from "../data/blog.json";
+import galleryData from "../data/gallery.json";
+import merchantData from "../data/merchant.json";
 
 const constantSlice = createSlice({
     name: "constant",
@@ -7,7 +10,11 @@ const constantSlice = createSlice({
         browserlogo: "",
         currentPageTitle: "",
         currentPage: "",
-        data: "",
+        data: {
+            merchant: merchantData,
+            blog: blogData,
+            gallery: galleryData
+        },
 
     },
     reducers:{

@@ -19,7 +19,7 @@ export default function OurFarmers() {
       <section className="farms-container">
         <div data-aos="fade-up" className="farmer-profile">
           <span className="farmer-profile-image">
-            <span className="farmer-profile-image-thumbnail">image</span>
+            <span className="farmer-profile-image-thumbnail"><img src="" alt="" /></span>
           </span>
           <span className="farmer-profile-name">nicole jonshon</span>
           <span className="farmer-profile-role">organic farmer</span>
@@ -34,7 +34,7 @@ export default function OurFarmers() {
 
         <div data-aos="fade-up" className="farmer-profile">
           <span className="farmer-profile-image">
-            <span className="farmer-profile-image-thumbnail">image</span>
+            <span className="farmer-profile-image-thumbnail"><img src="" alt="" /></span>
           </span>
           <span className="farmer-profile-name">nicole jonshon</span>
           <span className="farmer-profile-role">organic farmer</span>
@@ -49,7 +49,7 @@ export default function OurFarmers() {
 
         <div data-aos="fade-up" className="farmer-profile">
           <span className="farmer-profile-image">
-            <span className="farmer-profile-image-thumbnail">image</span>
+            <span className="farmer-profile-image-thumbnail"><img src="" alt="" /></span>
           </span>
           <span className="farmer-profile-name">nicole jonshon</span>
           <span className="farmer-profile-role">organic farmer</span>
@@ -64,7 +64,7 @@ export default function OurFarmers() {
 
         <div data-aos="fade-up" className="farmer-profile">
           <span className="farmer-profile-image">
-            <span className="farmer-profile-image-thumbnail">image</span>
+            <span className="farmer-profile-image-thumbnail"><img src="" alt="" /></span>
           </span>
           <span className="farmer-profile-name">nicole jonshon</span>
           <span className="farmer-profile-role">organic farmer</span>

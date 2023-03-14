@@ -10,8 +10,9 @@ export default function WhatINspiresUs() {
 
   return (
     <>
-      <span data-aos="fade-right" className="HomeWhySection-heading">
-        what inspires us <span>!</span>
+      <span className="HomeWhySection-heading">
+        <span data-aos="fade-right" className="head">what inspires us</span> 
+        <span data-aos="fade-up" className="quot">!</span>
       </span>
       <section className="HomeWhySection">
         <div data-aos="fade-right" className="HomeWhySection-left"></div>

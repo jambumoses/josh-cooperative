@@ -1,0 +1,297 @@
+.gallery-collection-banner{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-collection-banner-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: transparent;
+    height: 200px;
+    padding: 10px 5%;
+    margin: 0px 0px;
+    margin-top: 0px;
+}
+
+.gallery-collection-banner-item-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 90%;
+    width: 30%;
+    border-radius: 20px;
+}
+
+.gallery-collection-banner-item-block img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.gallery-collection-banner-item-block h5{
+    font-size: 15px;
+    padding: 0px 50px;
+    text-align: center;
+    font-weight: 500;
+    color: grey;
+    text-transform: uppercase;
+    font-family: poppins, sans-serif;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.gallery-collection-banner-item-block span{
+    font-size: 13px;
+    padding: 0px 50px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    color: lightgray;
+}
+
+.gallery-section{
+    background-color: black;
+    padding: 30px 5%;
+    padding-bottom: 50px;
+}
+
+.gallery-whole-component{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: 400px;
+    width: 100%;
+}
+
+.gallery-whole-component-main{
+    background-color: transparent;
+    width: 75%;
+}
+
+.gallery-whole-component-main img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.gallery-whole-component-aside{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    width: 25%;
+}
+
+.gallery-whole-component-aside h5{
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    /* color: rgba(0, 0, 0, 0.616); */
+    color: grey;
+}
+
+.gallery-whole-component-aside-notes{
+    padding: 0px 25px;
+    font-size: 14px;
+    font-family: poppins, sans-serif;
+    text-align: left;
+    /* color: rgba(0, 0, 0, 0.849); */
+    color: lightslategray;
+    padding-bottom: 20px;
+}
+
+.gallery-whole-component-aside-notes span{
+    text-transform: lowercase;
+    padding-left: 20px;
+    font-size: 13px;
+    color: lightseagreen;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.gallery-whole-component-aside-date{
+    padding: 0px 25px;
+    font-size: 12px;
+    font-family: monospace, poppins, sans-serif;
+    font-weight: initial;
+    color: grey;
+}
+
+.galler-normal{
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+    padding: 0px 5%;
+    padding-bottom: 50px;
+    background-color: black;
+}
+
+.galler-normal-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 400px;
+    padding: 0px 5%;
+    padding-bottom: 50px;
+    background-color: black;
+
+}
+
+.galler-normal-left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.galler-normal-left .galler-normal-left-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    height: 50%;
+    margin-top: 5px;
+}
+
+.galler-normal-left-item{
+    width: 50%;
+    height: 100%;
+    margin: 0px 10px;
+}
+
+.galler-normal-left-item img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.galler-normal-right{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.galler-normal-right img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.gallery-collection-component{
+    background-color: black;
+    padding: 0px 5%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.gallery-collection-component-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+    padding-bottom: 10px;
+}
+
+.gallery-collection-component-header h5{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.616);
+    color: lightgray;
+    margin: 0px;
+}
+
+.gallery-collection-component-header span{
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    /* color: rgba(0, 0, 0, 0.616); */
+    color: gray;
+    margin: 0px;
+}
+
+.gallery-collection-component-note{
+    font-size: 13px;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    /* color: rgba(0, 0, 0, 0.616); */
+    color: gray;
+    margin: 0px;
+    padding-top: 20px;
+    width: 350px;
+    text-align: left;
+}
+
+.gallery-collection-component-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.gallery-collection-component-item{
+    background-color: transparent;
+    /* height: 250px; */
+    width: 20%;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.gallery-collection-component-item-image{
+    background-color: transparent;
+    height: 250px;
+    cursor: pointer;
+}
+
+.gallery-collection-component-item-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallery-collection-component-item-name{
+    text-transform: capitalize;
+    font-size: 14px;
+    /* color: rgba(0, 0, 0, 0.712); */
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    padding: 5px 0px;
+    color: grey;
+}
+
+.gallery-collection-component-item-date{
+    font-size: 12px;
+    font-family: monospace, poppins, sans-serif;
+    color: grey;
+}
+
+
+.seemore button{
+    margin: 20px 0px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.712);
+    background-color: lightgray;
+    border-radius: 3px;
+    cursor: pointer;
+}

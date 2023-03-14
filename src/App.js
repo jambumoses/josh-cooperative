@@ -40,7 +40,7 @@ function App() {
     <>
       <Router>
         {
-          (currentPage != "Blog" && currentPage != "Contact") && <NavBar />
+          //(currentPage != "Gallery" && currentPage != "Blog" && currentPage != "Contact") && <NavBar />
         }
         <Switch>
           <Route path="/" exact component={HomePage} />

@@ -1,19 +1,25 @@
 .HomeWhySection-heading{
-    display: block;
+    display: flex;
     padding: 2% 5%;
     padding-top: 100px;
     text-transform: capitalize;
     font-size: 50px;
     text-decoration: underline;
     color: rgba(0, 0, 0, 0.664);
+    color: gray;
     background-color: rgba(211, 211, 211, 0.13);
+    background-color: black;
 }
 
-.HomeWhySection-heading span{
+.HomeWhySection-heading .head{
+    display: block;
+}
+
+.HomeWhySection-heading .quot{
     color: darkred;
     position: absolute;
     font-size: 100px;
-    margin-left: 50px;
+    margin-left: 460px;
     margin-top: -50px;
     transform: rotateZ(30deg);
     font-family: poppins, sans-serif;
@@ -25,6 +31,7 @@
     display: flex;
     flex-direction: row;
     background-color: rgba(211, 211, 211, 0.13);
+    background-color: black;
     height: 500px;
     padding: 5%;
 }
@@ -44,10 +51,12 @@
     display: flex;
     flex-direction: column;
     background-color: white;
+    background-color: black;
     width: 40%;
     height: 90%;
     border-radius: 5px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.26);
+    border: 1px solid rgba(128, 128, 128, 0.26);
 }
 
 .why-item .y-icon{
@@ -56,6 +65,7 @@
     justify-content: center;
     background-color: transparent;
     height: 35%;
+    color: grey;
 }
 
 .y-icon-thumbnail{
@@ -70,6 +80,7 @@
 
 .why-item .y-title{
     display: block;
+    color: lightgrey;
     background-color: transparent;
     padding-top: 5px;
     padding: 0px 30px;
@@ -82,6 +93,7 @@
 .why-item .y-description{
     display: block;
     height: 40%;
+    color: grey;
     text-transform: capitalize;
     text-align: center;
     padding: 0px 30px;

@@ -8,30 +8,40 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(245, 245, 245);
-    padding: 5%7%;
+    background-color: black;
+    padding: 5% 7%;
+    padding-top: 170px;
 }
 
 .homebanner-about-floating-image{
-    background-color: lightgrey;
+    background-color: rgb(243, 243, 243);
+    background-color: transparent;
     height: 500px;
-    width: 27vw;
-    margin-top: -250px;
+    width: 40vw;
+    /* margin-top: -250px; */
     border-radius: 10px;
-    box-shadow: 0px 5px 20px rgba(58, 58, 58, 0.486);
+    /* box-shadow: 0px 5px 20px rgba(58, 58, 58, 0.486); */
+}
+
+.homebanner-about-floating-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .homebanner-about-small-note{
     display: flex;
     flex-direction: column;
-    width: 30vw;
-    background-color: azure;
+    width: 25vw;
+    background-color: wheat;
     padding: 50px 70px ;
+    border-radius: 10px;
 }
 
 .homebanner-about-small-note .sub-title{
     display: block;
     text-transform: capitalize;
-    color: wheat;
+    color: white;
     font-size: 35px;
 }
 
@@ -62,6 +72,7 @@
     color: rgb(58, 58, 58);
     border: none;
     background-color: wheat;
+    border: 2px solid white;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s linear;

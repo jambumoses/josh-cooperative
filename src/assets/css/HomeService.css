@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: lightgoldenrodyellow;
+  background-color: black;
   padding: 0px 5%;
   padding-bottom: 20px;
 }
@@ -15,13 +15,14 @@
   font-weight: 600;
   letter-spacing: 10px;
   font-family: poppins, sans-serif;
-  color: grey;
+  color: lightgrey;
 }
 
 .home-service-section p {
   margin-top: -20px;
   width: 50%;
   text-align: center;
+  color: grey;
 }
 
 .home-service-container {

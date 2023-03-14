@@ -1,0 +1,30 @@
+{
+  "company": {
+    "id": "",
+    "name": "",
+    "description": "",
+    "created_year": "",
+
+    "logo": {
+      "footer": "",
+      "browser": "",
+      "nav": ""
+    }
+  },
+  "socials": [
+    {
+      "id": "",
+      "title": "",
+      "icon": "",
+      "link": ""
+    }
+  ],
+  "contact": [
+    {
+        "id": "",
+        "title": "",
+        "icon": "",
+        "link": ""
+    }
+  ]
+}

@@ -60,11 +60,43 @@ export default function Blog() {
         </section>
 
         <section className="blog-item-container" id="topBlog">
+
+          <div className="blog-item-huge">
+            <span className="blog-item-huge-thumbnail"><img src={image5} alt="" /></span>
+            <div className="blog-item-huge-details">
+              <span className="blog-item-huge-details-title">organic farming revert back</span>
+              <span className="blog-item-huge-details-date">13/04/17</span>
+              <span className="blog-item-huge-details-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging
+              advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
+              <span className="blog-item-huge-details-comments">
+                  <span>
+                    <i className="fa fa-heart"></i>
+                    <i className="fa fa-thumbs-up"></i>
+                    <i className="fa fa-shuffle"></i>
+                  </span>
+                  <button>read more</button>
+                </span>
+            </div>
+          </div>
+
           <div className="blog-item">
-            <span className="blog-item-thumbnail"><img src={image1} alt="" /></span>
-            <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
-            <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
+            <span className="blog-item-details">
+              <span className="blog-item-thumbnail"><img src={image1} alt="" /></span>
+              <span className="blog-item-title">organic farming revert back</span>
+              <span className="blog-item-date">13/04/17</span>
+              <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging
+              read more
+              </span>
+            </span>
+
+            <span className="blog-item-details-comments">
+                  <span>
+                    <i className="fa fa-heart"></i>
+                    <i className="fa fa-thumbs-up"></i>
+                    <i className="fa fa-shuffle"></i>
+                  </span>
+                  {/* <button>read more</button> */}
+                </span>
           </div>
 
           <div className="blog-item">
@@ -89,10 +121,21 @@ export default function Blog() {
           </div>
 
           <div className="blog-item">
-            <span className="blog-item-thumbnail"><img src={image5} alt="" /></span>
-            <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
-            <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
+            <span className="blog-item-details">
+              <span className="blog-item-thumbnail"><img src={image5} alt="" /></span>
+              <span className="blog-item-title">organic farming revert back</span>
+              <span className="blog-item-date">13/04/17</span>
+              <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
+            </span>
+
+            <span className="blog-item-details-comments">
+                  <span>
+{/*                     <i className="fa fa-heart"></i>
+                    <i className="fa fa-thumbs-up"></i>
+                    <i className="fa fa-shuffle"></i> */}
+                  </span>
+                  <button>read more</button>
+                </span>
           </div>
 
           <div className="blog-item">

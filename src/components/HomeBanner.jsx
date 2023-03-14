@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 
 
@@ -12,9 +13,13 @@ export default function HomeBanner() {
 
   return (
     <>
-      <section className="homeBanner"></section>
+      {/* <section className="homeBanner"></section> */}
+
+      
       <section className="homebanner-about">
-        <div data-aos="fade-up" className="homebanner-about-floating-image"></div>
+        <div data-aos="fade-up" className="homebanner-about-floating-image">
+          <img src="" alt="" />
+        </div>
 
         <div data-aos="fade-left" className="homebanner-about-small-note">
           <span data-aos="fade-up" className="sub-title">about veggie</span>

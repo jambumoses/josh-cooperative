@@ -8,6 +8,7 @@
 @import url("./Blog.css");
 @import url("./footer.css");
 @import url("./Contact.css");
+@import url("./Gallery.css");
 
 * {
   font-family: poppins, sans-serif;
@@ -17,12 +18,14 @@ html {
   scroll-behavior: smooth;
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   border-spacing: 0px;
+  overflow-x: hidden;
 }
 
 button,

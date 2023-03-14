@@ -1,0 +1,63 @@
+{
+  "galleryBanner": {
+    "note": [
+      {
+        "id": "",
+        "created_at": "",
+        "title": "",
+        "description": ""
+      }
+    ],
+
+    "images": [
+      {
+        "id": "",
+        "created_at": "",
+        "name": "",
+        "url": ""
+      }
+    ]
+  },
+
+  "collections": [
+    {
+      "id": "",
+      "title": "",
+      "subtitle": "",
+      "note": "",
+      "image": [
+        {
+          "id": "",
+          "url": "",
+          "blog_url": "",
+          "name": "",
+          "created_at": ""
+        }
+      ]
+    }
+  ],
+
+  "descriptive_images": [
+    {
+      "id": "",
+      "name": "",
+      "note": "",
+      "created_at": "",
+      "blog_url": "",
+      "url": ""
+    }
+  ],
+
+  "related_images": [
+    {
+      "id": "",
+      "name": "",
+      "created_at": "",
+      "blog_url": "",
+      "main_image": "",
+      "sub_images": [
+        { "id": "", "name": "", "created_at": "", "main_image": "" }
+      ]
+    }
+  ]
+}
