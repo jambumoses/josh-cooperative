@@ -65,17 +65,17 @@ export default function Blog() {
             <span className="blog-item-huge-thumbnail"><img src={image5} alt="" /></span>
             <div className="blog-item-huge-details">
               <span className="blog-item-huge-details-title">organic farming revert back</span>
-              <span className="blog-item-huge-details-date">13/04/17</span>
+              <span className="blog-item-huge-details-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
               <span className="blog-item-huge-details-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging
               advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
-              <span className="blog-item-huge-details-comments">
+              {/* <span className="blog-item-huge-details-comments">
                   <span>
                     <i className="fa fa-heart"></i>
                     <i className="fa fa-thumbs-up"></i>
                     <i className="fa fa-shuffle"></i>
                   </span>
                   <button>read more</button>
-                </span>
+                </span> */}
             </div>
           </div>
 
@@ -83,40 +83,40 @@ export default function Blog() {
             <span className="blog-item-details">
               <span className="blog-item-thumbnail"><img src={image1} alt="" /></span>
               <span className="blog-item-title">organic farming revert back</span>
-              <span className="blog-item-date">13/04/17</span>
+              <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
               <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging
               read more
               </span>
             </span>
 
-            <span className="blog-item-details-comments">
+            {/* <span className="blog-item-details-comments">
                   <span>
                     <i className="fa fa-heart"></i>
                     <i className="fa fa-thumbs-up"></i>
                     <i className="fa fa-shuffle"></i>
                   </span>
-                  {/* <button>read more</button> */}
-                </span>
+                  <button>read more</button>
+                </span> */}
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image2} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image3} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image4} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
@@ -124,38 +124,35 @@ export default function Blog() {
             <span className="blog-item-details">
               <span className="blog-item-thumbnail"><img src={image5} alt="" /></span>
               <span className="blog-item-title">organic farming revert back</span>
-              <span className="blog-item-date">13/04/17</span>
+              <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
               <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
             </span>
-
+{/* 
             <span className="blog-item-details-comments">
                   <span>
-{/*                     <i className="fa fa-heart"></i>
-                    <i className="fa fa-thumbs-up"></i>
-                    <i className="fa fa-shuffle"></i> */}
                   </span>
                   <button>read more</button>
-                </span>
+                </span> */}
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image6} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image7} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image8} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
@@ -163,56 +160,70 @@ export default function Blog() {
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image9} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image10} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image11} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image12} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image13} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image11} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image12} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 
           <div className="blog-item">
             <span className="blog-item-thumbnail"><img src={image13} alt="" /></span>
             <span className="blog-item-title">organic farming revert back</span>
-            <span className="blog-item-date">13/04/17</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
+            <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
+          </div>
+
+          <div className="blog-item">
+            <span className="blog-item-thumbnail"><img src={image5} alt="" /></span>
+            <span className="blog-item-title">organic farming revert back</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
+            <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
+          </div>
+
+          <div className="blog-item">
+            <span className="blog-item-thumbnail"><img src={image6} alt="" /></span>
+            <span className="blog-item-title">organic farming revert back</span>
+            <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
             <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
           </div>
 

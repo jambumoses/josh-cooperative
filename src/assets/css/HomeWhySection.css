@@ -3,12 +3,20 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 5%;
+    padding-bottom: 100px;
     background-color: wheat;
+    background-color: black;
 }
 
 .home-suppermarket-left{
-    background-color: antiquewhite;
+    background-color: transparent;
     width: 40%;
+}
+
+.home-suppermarket-left img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .home-suppermarket-right{
@@ -21,11 +29,13 @@
     text-transform: capitalize;
     font-family: poppins, sans-serif;
     text-align: left;
+    color: lightgray;
 }
 
 .home-suppermarket-right p{
     padding: 20px 0px;
     padding-right: 200px;
+    color: grey;
 }
 
 .home-suppermarket-right button{
@@ -37,11 +47,12 @@
     font-size: 13px;
     font-weight: initial;
     cursor: pointer;
-    transition: 0.3s linear;
+    transition: 0.2s linear;
 }
 
 .home-suppermarket-right button:hover{
     background-color: rgba(0, 0, 0, 0.712);
     color: grey;
-    transition: 0.3s linear;
+    border: 1px solid grey;
+    /* transition: 0.2s linear; */
 }

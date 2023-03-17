@@ -1,84 +1,112 @@
-.homeBanner{
-    background-color: lightgoldenrodyellow;
-    height: 100vh;
+.homeBanner {
+  background-color: lightgoldenrodyellow;
+  height: 100vh;
 }
 
-.homebanner-about{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(245, 245, 245);
-    background-color: black;
-    padding: 5% 7%;
-    padding-top: 170px;
+.homeBanner-blur{
+  position: absolute;
+  background: -webkit-linear-gradient(bottom, black,rgba(0, 0, 0, 0.658));
+  background: -webkit-linear-gradient(bottom,black,rgba(0, 0, 0, 0.418));
+  height: 60vh;
+  width: 100%;
+  z-index: 2;
 }
 
-.homebanner-about-floating-image{
-    background-color: rgb(243, 243, 243);
-    background-color: transparent;
-    height: 500px;
-    width: 40vw;
-    /* margin-top: -250px; */
-    border-radius: 10px;
-    /* box-shadow: 0px 5px 20px rgba(58, 58, 58, 0.486); */
+.HomeBanner-image{
+  position: absolute;
+  background-color: lightblue;
+  width: 100%;
+  height: 60vh;
 }
 
-.homebanner-about-floating-image img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
+.HomeBanner-image-thumb{
+  background-color: lightcoral;
+  width: 100%;
+  height: 60vh;
 }
 
-.homebanner-about-small-note{
-    display: flex;
-    flex-direction: column;
-    width: 25vw;
-    background-color: wheat;
-    padding: 50px 70px ;
-    border-radius: 10px;
+.HomeBanner-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.homebanner-about-small-note .sub-title{
-    display: block;
-    text-transform: capitalize;
-    color: white;
-    font-size: 35px;
+.homebanner-about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(245, 245, 245);
+  background-color: black;
+  padding: 5% 7%;
+  padding-top: 50px;
 }
 
-.homebanner-about-small-note .title{
-    color: grey;
-    font-size: 60px;
-    padding-top: 5px;
-    text-transform: capitalize;
-    font-weight: 500;
-    font-family: poppins,;
+.homebanner-about-floating-image {
+  background-color: transparent;
+  height: 400px;
+  width: 40vw;
+  /* margin-top: -250px; */
+  border-radius: 10px;
+  /* box-shadow: 0px 5px 20px rgba(58, 58, 58, 0.486); */
 }
 
-.homebanner-about-small-note p{
-    text-transform: capitalize;
-    color: rgb(58, 58, 58);
-    font-size: 15px;
-    padding-bottom: 20px;
+.homebanner-about-floating-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
-.homebanner-about-small-note button{
-    display: inline-block;
-    width: 200px;
-    padding: 10px 15px;
-    text-transform: capitalize;
-    font-size: 15px;
-    font-family: poppins, sans-serif;
-    font-weight: 500;
-    color: rgb(58, 58, 58);
-    border: none;
-    background-color: wheat;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s linear;
+.homebanner-about-small-note {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  background-color: transparent;
+  padding: 50px 70px;
+  border-radius: 10px;
 }
 
-.homebanner-about-small-note button:hover{
-    transition: 0.3s linear;
-    color: grey;
+.homebanner-about-small-note .sub-title {
+  display: block;
+  text-transform: capitalize;
+  color: grey;
+  font-size: 16px;
+}
+
+.homebanner-about-small-note .title {
+  color: lightgrey;
+  font-size: 50px;
+  padding-top: 5px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: poppins;
+}
+
+.homebanner-about-small-note p {
+  text-transform: capitalize;
+  color: rgb(58, 58, 58);
+  color: grey;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+.homebanner-about-small-note button {
+  display: inline-block;
+  width: 200px;
+  padding: 10px 15px;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
+  color: grey;
+  border: none;
+  background-color: black;
+  border: 2px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.homebanner-about-small-note button:hover {
+  transition: 0.3s linear;
+  color: grey;
 }

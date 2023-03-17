@@ -15,7 +15,9 @@ export default function WhatINspiresUs() {
         <span data-aos="fade-up" className="quot">!</span>
       </span>
       <section className="HomeWhySection">
-        <div data-aos="fade-right" className="HomeWhySection-left"></div>
+        <div data-aos="fade-up" className="HomeWhySection-left">
+          <img src="" alt="" />
+        </div>
 
         <div className="HomeWhySection-right">
           <div data-aos="fade-up" className="why-top">

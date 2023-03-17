@@ -17,10 +17,10 @@ export default function HomeService() {
       </p>
 
       <div className="home-service-container">
-        <div data-aos="fade-up" className="home-service-item"></div>
-        <div data-aos="fade-up" className="home-service-item"></div>
-        <div data-aos="fade-up" className="home-service-item"></div>
-        <div data-aos="fade-up" className="home-service-item"></div>
+        <div data-aos="fade-up" className="home-service-item"><img src="" alt="" /></div>
+        <div data-aos="fade-up" className="home-service-item"><img src="" alt="" /></div>
+        <div data-aos="fade-up" className="home-service-item"><img src="" alt="" /></div>
+        <div data-aos="fade-up" className="home-service-item"><img src="" alt="" /></div>
       </div>
 
       <div>

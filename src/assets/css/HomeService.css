@@ -5,7 +5,8 @@
   align-items: center;
   background-color: black;
   padding: 0px 5%;
-  padding-bottom: 20px;
+  padding-top: 100px;
+  padding-bottom: 150px;
 }
 
 .home-service-section h3 {
@@ -19,7 +20,8 @@
 }
 
 .home-service-section p {
-  margin-top: -20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
   width: 50%;
   text-align: center;
   color: grey;
@@ -37,9 +39,15 @@
 }
 
 .home-service-item {
-  background-color: lightcoral;
+  background-color: transparent;
   height: 90%;
   width: 20%;
+}
+
+.home-service-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .home-service-section button {
@@ -51,6 +59,7 @@
   font-family: poppins, sans-serif;
   font-weight: 500;
   color: rgb(58, 58, 58);
+  color: grey;
   border: none;
   background-color: transparent;
   border: 2px solid grey;

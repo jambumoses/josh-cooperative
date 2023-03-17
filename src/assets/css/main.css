@@ -9,6 +9,9 @@
 @import url("./footer.css");
 @import url("./Contact.css");
 @import url("./Gallery.css");
+@import url("./MembersCount.css");
+@import url("./Partners.css");
+@import url("./About.css");
 
 * {
   font-family: poppins, sans-serif;

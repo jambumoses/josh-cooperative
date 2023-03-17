@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{useEffect} from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
 import banner from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM (1).jpeg";
@@ -12,6 +14,10 @@ export default function Contact() {
   
     dispatch(constantActions.updatePageTitles(companyName+" . "+"Contact Us")); // company name here
     dispatch(constantActions.setCurrentPage("Contact"));
+
+    useEffect(()=>{
+        Aos.init({duration: 2000});
+      },[]);
 
   return (
     <section>
@@ -46,44 +52,54 @@ export default function Contact() {
 
 
         <section className='contactInformation-section'>
-            <div className='contactInformation-item'>
+            <div data-aos="fade-up" className='contactInformation-item'>
                 <span className='contactInformation-item-icon'><i className="fa fa-phone"></i></span>
                 <span className='contactInformation-item-title'>phone</span>
                 <span className='contactInformation-item-content'>0708093144</span>
             </div>
 
-            <div className='contactInformation-item'>
+            <div data-aos="fade-up" className='contactInformation-item'>
                 <span className='contactInformation-item-icon'><i className="fa fa-envelope"></i></span>
                 <span className='contactInformation-item-title'>Email</span>
                 <span className='contactInformation-item-content'>jambcareer@gmail.com</span>
             </div>
 
-            <div className='contactInformation-item'>
+            <div data-aos="fade-up" className='contactInformation-item'>
                 <span className='contactInformation-item-icon'><i className="fa fa-location-dot"></i></span>
                 <span className='contactInformation-item-title'>address</span>
                 <span className='contactInformation-item-content'>Cooperative Society Ltd Was Founded In 2012</span>
             </div>
 
-            <div className='contactInformation-item'>
+            <div data-aos="fade-up" className='contactInformation-item'>
                 <span className='contactInformation-item-icon'><i className="fa fa-phone"></i></span>
                 <span className='contactInformation-item-title'>whatsUp</span>
                 <span className='contactInformation-item-content'>0708093144</span>
             </div>
         </section>
 
+        <section className='offices-section'>
+            <h5>
+                <span data-aos="fade-left"><i className="fa fa-building"></i></span> 
+                <span data-aos="fade-left">our offices</span>
+            </h5>
+            <p data-aos="fade-right">
+                The cooperative is in Katakwi District with its main offices is located at Abarata Keere Weekly Market, Okuda Trading Center, Ongongoja Sub-County Katakwi District Eastern Uganda.
+            </p>
+        </section>
+
         <div className='get-in-touch'>
-            <h3>Get in touch</h3>
-            <p>
+            <h3 data-aos="fade-up">Get in touch</h3>
+            <p data-aos="fade-up">
             Cooperative Society Ltd Was Founded In 2012 Cooperative Society Ltd Was Founded In 2012
             </p>
         </div>
 
         <section className='contactInformation-form-section'>
-            <section className='contactInformation-form-bg'>
+            <section data-aos="fade-up" className='contactInformation-form-bg'>
                 <img src={contactImage} alt="" />
             </section>
 
-            <section className='contactInformation-form'>
+            <section data-aos="fade-up" className='contactInformation-form'>
                 <span className='contactInformation-form-input-cont'>
                     <span className='contactInformation-form-lebal'>your name :</span>
                     <span className='contactInformation-form-inputs'>
@@ -119,6 +135,11 @@ export default function Contact() {
                     </span>
                 </span>
             </section>
+        </section>
+
+        <section className="contact-map-section">
+            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=african%20queen&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            </iframe>
         </section>
     </section>
   )

@@ -104,6 +104,7 @@
     background-color: rgb(238, 238, 238);
     border-radius: 10px;
     width: 30%;
+    padding: 0px 10px;
     margin: 20px;
 }
 
@@ -134,29 +135,81 @@
     text-align: center;
 }
 
-.get-in-touch{
+
+.offices-section{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background-color: black;
+    padding: 100px 10%;
+    padding-bottom: 150px;
+}
+
+.offices-section h5{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    font-size: 40px;
+    width: 50%;
+    text-align: center;
+}
+
+.offices-section h5 span{
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.offices-section h5 span i{
+    color: rgb(49, 49, 49);
+    font-size: 50px;
+}
+
+.offices-section p{
+    width: 50%;
+    font-size: 17px;
+    text-align: left;
+    text-transform: lowercase;
+    color: rgba(128, 128, 128, 0.719);
+    padding-top: 40px;
+}
+
+.offices-section p::first-letter{
+    text-transform: uppercase;
+}
+
+.get-in-touch{
+    display: flex;
+    flex-direction: row-reverse;
     background-color: black;
+    padding: 50px 10%;
 }
 
 .get-in-touch h3{
     background-color: black;
     font-size: 30px;
+    width: 50%;
     font-family: poppins,sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    color: white;
+    text-align: center;
+    color: lightgray;
+    text-decoration: underline;
 }
 
 .get-in-touch p{
-    color: lightgray;
-    font-size: 14px;
-    width: 450px;
+    color: rgba(128, 128, 128, 0.719);
+    font-size: 16px;
+    /* width: 450px; */
+    width: 50%;
+    /* padding-right: 100px; */
     text-align: center;
     text-transform: lowercase;
+}
+
+.get-in-touch p::first-letter{
+    text-transform: uppercase;
 }
 
 
@@ -166,7 +219,6 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: black;
-    height: 500px;
     padding: 100px 10%;
     padding-top: 70px;
 }
@@ -245,4 +297,16 @@
     text-transform: capitalize;
     font-weight: 500;
     cursor: pointer;
+}
+
+.contact-map-section{
+    background-color: black;
+    height: 200px;
+    padding: 0px 10%;
+}
+
+.contact-map-section iframe{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
 }

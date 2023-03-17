@@ -10,19 +10,21 @@ export default function HomeWhySection() {
 
   return (
     <section className="home-suppermarket">
-      <section  data-aos="fade-right" className="home-suppermarket-left"></section>
+      <section  data-aos="fade-up" className="home-suppermarket-left">
+        <img src="" alt="" />
+      </section>
 
-      <section  data-aos="fade-left" className="home-suppermarket-right">
-        <span>why veggie super market?</span>
-        <p data-aos="fade-left">
+      <section  data-aos="fade-up" className="home-suppermarket-right">
+        <span data-aos="fade-up">why veggie super market?</span>
+        <p data-aos="fade-up">
           we deliver fresh farm produce fruits and vegitables to our esteemed
           customers, Our team members are farm and horticulture
         </p>
-        <p data-aos="fade-left">
+        <p data-aos="fade-up">
           we deliver fresh farm produce fruits and vegitables to our esteemed
           customers, Our team members are farm and horticulture
         </p>
-        <button data-aos="fade-left">purchase now</button>
+        <button data-aos="fade-up">purchase now</button>
       </section>
     </section>
   );

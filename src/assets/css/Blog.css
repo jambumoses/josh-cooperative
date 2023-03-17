@@ -113,29 +113,64 @@
 .blog-item-huge-details{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 50%;
 }
 
 .blog-item-huge-details-title{
     display: block;
     padding: 15px 2px;
+    padding-left: 20px;
     padding-top: 20px;
     text-transform: capitalize;
-    text-align: center;
+    text-align: left;
     font-family: poppins, sans-serif;
     font-weight: 500;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.blog-item-huge-details-title:hover{
+    color: green;
+    transition: 0.2s linear;
 }
 
 .blog-item-huge-details-date{
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
     font-family: poppins, sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
     margin-top: -10px;
+    padding-left: 20px;
+}
+
+.blog-item-huge-details-date .by{
+    font-size: 10px;
+    font-family: poppins, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.blog-item-huge-details-date .by span{
+    color: black;
+    font-weight: 500;
+}
+
+.blog-item-huge-details-date .time{
+    font-size: 10px;
+    font-family: poppins, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.685);
+    padding-left: 20px;
+}
+
+
+.blog-item-huge-details-date .time i{
+    color: gray;
+    font-size: 10px;
 }
 
 .blog-item-huge-details-note{
@@ -210,17 +245,52 @@
     font-family: poppins, sans-serif;
     font-weight: 500;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.blog-item-title:hover{
+    color: green;
+    transition: 0.2s linear;
 }
 
 .blog-item-date{
-    display: block;
-    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
     font-family: poppins, sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
     color: grey;
     margin-top: -10px;
+    padding-left: 5px;
 }
+
+.blog-item-date .by{
+    font-size: 10px;
+    font-family: poppins, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.blog-item-date .by span{
+    color: black;
+    font-weight: 500;
+}
+
+.blog-item-date .time{
+    font-size: 10px;
+    font-family: poppins, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+
+.blog-item-date .time i{
+    color: gray;
+    font-size: 10px;
+}
+
+
+
 
 
 .blog-item-note{
