@@ -9,8 +9,8 @@ export default function OurFarmers() {
 
   return (
     <section className="ourFarm-section">
-      <h3 data-aos="fade-up">our farmers</h3>
-      <span data-aos="fade-up" className="farm-subtitle">veggleSupermarket</span>
+      <h3 data-aos="fade-up">board committe members</h3>
+      <span data-aos="fade-up" className="farm-subtitle">ongongoja cooperative</span>
       <span data-aos="fade-up" className="farm-note-description">
         we deliver fresh farm produce fruits and vegitables to our esteemed
         customers, Our team members are farm and horticulture
@@ -21,11 +21,10 @@ export default function OurFarmers() {
           <span className="farmer-profile-image">
             <span className="farmer-profile-image-thumbnail"><img src="" alt="" /></span>
           </span>
-          <span className="farmer-profile-name">nicole jonshon</span>
-          <span className="farmer-profile-role">organic farmer</span>
+          <span className="farmer-profile-name">Engole Gabriel</span>
+          <span className="farmer-profile-role">Chairperson</span>
           <span className="farmer-profile-description">
-            we deliver fresh farm produce fruits and vegitables to our esteemed
-            customers, Our team members are farm and horticulture
+          He oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic ...
           </span>
           <a href="/know more">
             <button>know more</button>
@@ -36,11 +35,10 @@ export default function OurFarmers() {
           <span className="farmer-profile-image">
             <span className="farmer-profile-image-thumbnail"><img src="" alt="" /></span>
           </span>
-          <span className="farmer-profile-name">nicole jonshon</span>
-          <span className="farmer-profile-role">organic farmer</span>
+          <span className="farmer-profile-name">Aturo Joshua</span>
+          <span className="farmer-profile-role">vice Chairperson</span>
           <span className="farmer-profile-description">
-            we deliver fresh farm produce fruits and vegitables to our esteemed
-            customers, Our team members are farm and horticulture
+          The vice Chairperson Board Committee and successful businessman, his business skills are required for the success of the cooperative
           </span>
           <a href="/know more">
             <button>know more</button>
@@ -51,11 +49,10 @@ export default function OurFarmers() {
           <span className="farmer-profile-image">
             <span className="farmer-profile-image-thumbnail"><img src="" alt="" /></span>
           </span>
-          <span className="farmer-profile-name">nicole jonshon</span>
-          <span className="farmer-profile-role">organic farmer</span>
+          <span className="farmer-profile-name">Esau Joseph</span>
+          <span className="farmer-profile-role">Secretary</span>
           <span className="farmer-profile-description">
-            we deliver fresh farm produce fruits and vegitables to our esteemed
-            customers, Our team members are farm and horticulture
+          Secretary to the board committee and ensures that the board business is conducted as per the constitution of the cooperative
           </span>
           <a href="/know more">
             <button>know more</button>
@@ -66,11 +63,10 @@ export default function OurFarmers() {
           <span className="farmer-profile-image">
             <span className="farmer-profile-image-thumbnail"><img src="" alt="" /></span>
           </span>
-          <span className="farmer-profile-name">nicole jonshon</span>
-          <span className="farmer-profile-role">organic farmer</span>
+          <span className="farmer-profile-name">Mr. Engole Ocaatum Faucet Arthur</span>
+          <span className="farmer-profile-role">Former Chairperson</span>
           <span className="farmer-profile-description">
-            we deliver fresh farm produce fruits and vegitables to our esteemed
-            customers, Our team members are farm and horticulture
+          he has been the brain behind the registration of this Cooperative, retired Civil Servant who worked as Under Secretary 
           </span>
           <a href="/know more">
             <button>know more</button>

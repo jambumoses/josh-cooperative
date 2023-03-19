@@ -17,6 +17,7 @@
   letter-spacing: 10px;
   font-family: poppins, sans-serif;
   color: lightgrey;
+  color: green;
 }
 
 .home-service-section p {
@@ -39,12 +40,40 @@
 }
 
 .home-service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   background-color: transparent;
-  height: 90%;
+
   width: 20%;
 }
 
-.home-service-item img{
+.home-service-item h5{
+  font-size: 35px;
+  text-transform: capitalize;
+  font-family: poppins, sans-serif;
+  color: lightgray;
+  color: green;
+  text-align: center;
+}
+
+.home-service-item span{
+  font-size: 17px;
+  font-family: poppins, sans-serif;
+  color: grey;
+  text-align: center;
+  padding-top: 20px;
+  
+}
+
+.home-service-item div{
+  height: 150px;
+  width: 150px;
+  padding-top: 30px;
+}
+
+.home-service-item div img{
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -54,6 +83,7 @@
   display: inline-block;
   width: 200px;
   padding: 10px 15px;
+  margin-top: 50px;
   text-transform: capitalize;
   font-size: 15px;
   font-family: poppins, sans-serif;
@@ -63,6 +93,8 @@
   border: none;
   background-color: transparent;
   border: 2px solid grey;
+  border: 2px solid green;
+  color: green;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s linear;

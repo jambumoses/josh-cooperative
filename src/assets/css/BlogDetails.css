@@ -1,0 +1,41 @@
+.blogDetails-section{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 50px 10%;
+}
+
+.blogDetails-section main{
+    width: 70%;
+    background-color: lightblue;
+}
+
+.blogDetails-section aside{
+    width: 30%;
+    background-color: lightgreen;
+}
+
+.aside-header{
+    background-color: lightgray;
+    display: flex;
+    padding-left: 20px;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    color: green;
+}
+
+.aside-header i{
+    padding-left: 10px;
+    padding-top: 5px;
+    color: orangered;
+}
+
+
+.aside-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 20px;
+}

@@ -43,7 +43,7 @@ export default function Contact() {
                 <span><Link to="/" className="a" href="">home </Link></span>.
                 <span><Link to="/blog" className="a" href="">blog</Link></span>.
                 <span><Link to="/about" className="a" href="">about us </Link></span>.
-                <span><Link to="/services" className="a" href="">services</Link></span>.
+                {/* <span><Link to="/services" className="a" href="">services</Link></span>. */}
                 <span><Link to="/gallery" className="a" href="">gallery</Link></span>.
                 <span><Link to="/contact" className="a active" href="">contact us</Link></span>
             </div>
@@ -55,25 +55,25 @@ export default function Contact() {
             <div data-aos="fade-up" className='contactInformation-item'>
                 <span className='contactInformation-item-icon'><i className="fa fa-phone"></i></span>
                 <span className='contactInformation-item-title'>phone</span>
-                <span className='contactInformation-item-content'>0708093144</span>
+                <span className='contactInformation-item-content'>0782612565 / <br /> 0775166159</span>
             </div>
 
-            <div data-aos="fade-up" className='contactInformation-item'>
+            <div data-aos="fade-up" className='contactInformation-item contactInformation-item-email'>
                 <span className='contactInformation-item-icon'><i className="fa fa-envelope"></i></span>
                 <span className='contactInformation-item-title'>Email</span>
-                <span className='contactInformation-item-content'>jambcareer@gmail.com</span>
+                <span className='contactInformation-item-content'>ongongojafruitgrowers2023<br/>@gmail.Com</span>
             </div>
 
             <div data-aos="fade-up" className='contactInformation-item'>
                 <span className='contactInformation-item-icon'><i className="fa fa-location-dot"></i></span>
                 <span className='contactInformation-item-title'>address</span>
-                <span className='contactInformation-item-content'>Cooperative Society Ltd Was Founded In 2012</span>
+                <span className='contactInformation-item-content'>Abarata Keere Weekly Market, Okuda Trading Center, Ongongoja Sub-County Katakwi District Eastern Uganda.</span>
             </div>
 
             <div data-aos="fade-up" className='contactInformation-item'>
                 <span className='contactInformation-item-icon'><i className="fa fa-phone"></i></span>
                 <span className='contactInformation-item-title'>whatsUp</span>
-                <span className='contactInformation-item-content'>0708093144</span>
+                <span className='contactInformation-item-content'>0775166159 / <br />  0775166159</span>
             </div>
         </section>
 

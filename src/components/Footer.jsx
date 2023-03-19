@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from 'react-redux';
-
+import naads from "../assets/images/naads.png";
+import logo from "../assets/images/logo.png";
 
 
 
@@ -18,10 +19,10 @@ export default function Footer() {
   function FooterPartner(){
     return(
       <section className='footerPartners'>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
-        <div><img src="" alt="" /></div>
+        <div><img src={naads} alt="" /></div>
+        <div><img src={naads} alt="" /></div>
+        <div><img src={naads} alt="" /></div>
+        <div><img src={naads} alt="" /></div>
       </section>
     )
   }
@@ -37,7 +38,7 @@ export default function Footer() {
 
       <footer>
         <div className='footer-company-description'>
-          <span className='logo'><img src="" alt="logo" /></span>
+          <span className='logo' style={{}}><img src={logo} alt="logo" /></span>
           <span className='footer-company-description-note'>ongongoja fruit growers cooperative society ltd was founded in 2012 by a group of farmers who were engaged in fruit growing , to look for market for their products.</span>
         </div>
         
@@ -84,17 +85,17 @@ export default function Footer() {
             <div className='footer-right-item-news'>
               <span className='footer-right-item-news-item'>
                 <span className='footer-right-item-news-item-head'>address</span>
-                <span className='footer-right-item-news-item-date'>Cooperative Society Ltd Was Founded In 2012</span>
+                <span className='footer-right-item-news-item-date'>located at Abarata Keere Weekly Market, Okuda Trading Center, Ongongoja Sub-County Katakwi District Eastern Uganda.</span>
               </span>
               
               <span className='footer-right-item-news-item'>
                 <span className='footer-right-item-news-item-head'>email</span>
-                <span className='footer-right-item-news-item-date'>jambcareer@gmail.com</span>
+                <span className='footer-right-item-news-item-date'>ongongojafruitgrowers2023@gmail.com</span>
               </span>
 
               <span className='footer-right-item-news-item'>
                 <span className='footer-right-item-news-item-head'>phone</span>
-                <span className='footer-right-item-news-item-date'>0708093144</span>
+                <span className='footer-right-item-news-item-date'>0782612565 / 0775166159</span>
               </span>
             </div>
           </div>

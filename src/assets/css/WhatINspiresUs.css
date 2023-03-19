@@ -84,6 +84,11 @@
     width: 39%;
 }
 
+.y-icon-thumbnail i{
+    color: grey;
+    font-size: 30px;
+}
+
 .why-item .y-title{
     display: block;
     color: lightgrey;

@@ -15,6 +15,7 @@ import image10 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM.jpe
 import image11 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM (2).jpeg";
 import image12 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.16 PM.jpeg";
 import image13 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.12 PM.jpeg";
+
 import { useDispatch, useSelector } from "react-redux";
 import { constantActions } from "./store/constantSlice";
 
@@ -52,7 +53,7 @@ export default function Blog() {
               <span><Link to="/" className="a" href="">home </Link></span>.
               <span><Link to="/blog" className="a active" href="">blog</Link></span>.
               <span><Link to="/about" className="a" href="">about us </Link></span>.
-              <span><Link to="/services" className="a" href="">services</Link></span>.
+              {/* <span><Link to="/services" className="a" href="">services</Link></span>. */}
               <span><Link to="/gallery" className="a" href="">gallery</Link></span>.
               <span><Link to="/contact" className="a" href="">contact us</Link></span>
             </div>

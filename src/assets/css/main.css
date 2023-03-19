@@ -12,6 +12,7 @@
 @import url("./MembersCount.css");
 @import url("./Partners.css");
 @import url("./About.css");
+@import url("./BlogDetails.css");
 
 * {
   font-family: poppins, sans-serif;

@@ -6,26 +6,28 @@ import math from "math";
 
 export default function MembersCount() {
 
-    const [countFemale,setCountFemale] = useState(0)
-    const [countMale,setCountMale] = useState({startValue: 0,endValue: 212});
-    const [countYouth,setCountYouth] = useState({startValue: 0,endValue: 150});
-    const [countDisabilities,setCountDisabilities] = useState({startValue: 0,endValue: 5});
+    const [countFemale,setCountFemale] = useState(318)
+    const [countMale,setCountMale] = useState(212);
+    const [countYouth,setCountYouth] = useState(150);
+    const [countDisabilities,setCountDisabilities] = useState(5);
 
-    let valueDisplays = $("#countNumber")
-    let interval = 5000;
+    //let valueDisplays = $("#countNumber")
+    //let interval = 5000;
     
-    let endValue = 318;
-    let duration = math.floor(interval / endValue);
-/* 
+    //let endValue = 10;/* 318 */
+    //let duration = math.floor(interval / endValue);
+
+
+    /* 
     let femaleCounter = setInterval(()=>{
 
         const newFemale = countFemale + 1;
-        setCountFemale(newFemale);
-
         if(countFemale == endValue){
             clearInterval(femaleCounter);
+        }else{
+        setCountFemale(newFemale);
         }
-    },duration); */
+    },2000); */
 
 
 /*             318
@@ -45,9 +47,9 @@ export default function MembersCount() {
             <span data-aos="fade-up" className='Home-membership-section-subtitle'>join our communitte with over</span>
             <div data-aos="fade-up" className='Home-membership-count-section'>
                 <div> <span id="countNumber">{countFemale}</span> <span>female</span></div>
-                <div> <span id="countNumber">{countMale.startValue}</span> <span>male</span></div>
-                <div> <span id="countNumber">{countYouth.startValue}</span> <span>youth</span></div>
-                <div> <span id="countNumber">{countDisabilities.startValue}</span> <span>disabilities</span></div>
+                <div> <span id="countNumber">{countMale}</span> <span>male</span></div>
+                <div> <span id="countNumber">{countYouth}</span> <span>youth</span></div>
+                <div> <span id="countNumber">{countDisabilities}</span> <span>disabilities</span></div>
             </div>
             <button data-aos="fade-up" type='button'>
                 join today

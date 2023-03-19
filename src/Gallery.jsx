@@ -59,9 +59,9 @@ export default function Gallery() {
                 <span><Link to="/" className="a" href="">home </Link></span>.
                 <span><Link to="/blog" className="a" href="">blog</Link></span>.
                 <span><Link to="/about" className="a" href="">about us </Link></span>.
-                <span><Link to="/services" className="a" href="">services</Link></span>.
-                <span><Link to="/gallery" className="a" href="">gallery</Link></span>.
-                <span><Link to="/contact" className="a active" href="">contact us</Link></span>
+                {/* <span><Link to="/services" className="a" href="">services</Link></span>. */}
+                <span><Link to="/gallery" className="a active" href="">gallery</Link></span>.
+                <span><Link to="/contact" className="a" href="">contact us</Link></span>
             </div>
         </nav>
         </section>

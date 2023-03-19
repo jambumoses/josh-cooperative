@@ -13,6 +13,8 @@ import { useDispatch, useSelector } from "react-redux";
 import Services from "./Services";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
+import BlogDetails from "./BlogDetails";
+import browserIcon from "./assets/images/logo.png";
 
 function App() {
 
@@ -23,7 +25,7 @@ function App() {
   const currentPage = useSelector(state=>state.constant.currentPage)
   const PageTitles = useSelector(state=>state.constant.currentPageTitle)
 
-
+  $("#browser-icons").attr("href",browserIcon)
 
 
   useEffect(() => {
@@ -48,6 +50,8 @@ function App() {
           <Route path="/index" component={HomePage} />
 
           <Route path="/blog" component={Blog} />
+          <Route path="/blog-details" component={BlogDetails} />
+
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
           <Route path="/gallery" component={Gallery} />

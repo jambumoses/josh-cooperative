@@ -1,3 +1,30 @@
+.home-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 60vh;
+  z-index: 2;
+}
+
+.home-logo span{
+  display: block;
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  margin-top:-60px;
+}
+
+
+.home-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
 .homeBanner {
   background-color: lightgoldenrodyellow;
   height: 100vh;
@@ -53,7 +80,7 @@
 .homebanner-about-floating-image img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .homebanner-about-small-note {
@@ -74,7 +101,8 @@
 
 .homebanner-about-small-note .title {
   color: lightgrey;
-  font-size: 50px;
+  color: green;
+  font-size: 30px;
   padding-top: 5px;
   text-transform: capitalize;
   font-weight: 500;
@@ -85,6 +113,7 @@
   text-transform: capitalize;
   color: rgb(58, 58, 58);
   color: grey;
+  padding-top: 30px;
   font-size: 15px;
   padding-bottom: 20px;
 }
@@ -101,6 +130,8 @@
   border: none;
   background-color: black;
   border: 2px solid grey;
+  border: 2px solid green;
+  color: green;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s linear;

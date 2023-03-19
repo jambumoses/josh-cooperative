@@ -23,34 +23,34 @@ export default function WhatINspiresUs() {
           <div data-aos="fade-up" className="why-top">
             <div  className="why-item">
               <span className="y-icon">
-                <span className="y-icon-thumbnail">icon</span>
+                <span className="y-icon-thumbnail"><i className="fa fa-tree"></i></span>
               </span>
-              <span className="y-title">title</span>
-              <span className="y-description">we deliver fresh farm produce fruits and vegitables </span>
+              <span className="y-title">soil enrichment</span>
+              <span className="y-description">we deliver fresh farm produce fruits  </span>
             </div>
             <div className="why-item">
               <span className="y-icon">
-                <span className="y-icon-thumbnail">icon</span>
+                <span className="y-icon-thumbnail"><i className="fa fa-lemon"></i></span>
               </span>
-              <span className="y-title">title</span>
-              <span className="y-description">we deliver fresh farm produce fruits and vegitables </span>
+              <span className="y-title">fresh fruits</span>
+              <span className="y-description">we deliver fresh farm produce fruits  </span>
             </div>
           </div>
 
           <div data-aos="fade-up" className="why-bottom">
             <div className="why-item">
               <span className="y-icon">
-                <span className="y-icon-thumbnail">icon</span>
+                <span className="y-icon-thumbnail"><i className="fa fa-dna"></i></span>
               </span>
-              <span className="y-title">title</span>
-              <span className="y-description">we deliver fresh farm produce fruits and vegitables </span>
+              <span className="y-title">bio diversity</span>
+              <span className="y-description">we deliver fresh farm produce fruits  </span>
             </div>
             <div className="why-item">
               <span className="y-icon">
-                <span className="y-icon-thumbnail">icon</span>
+                <span className="y-icon-thumbnail"><i className="fa fa-heart"></i></span>
               </span>
-              <span className="y-title">title</span>
-              <span className="y-description">we deliver fresh farm produce fruits and vegitables </span>
+              <span className="y-title">healthy produce</span>
+              <span className="y-description">we deliver fresh farm produce fruits  </span>
             </div>
           </div>
         </div>
