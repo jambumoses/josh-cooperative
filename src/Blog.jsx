@@ -82,6 +82,8 @@ export default function Blog() {
 
   const [showBlog,setShowBlog] = useState("")
 
+  const [seeMore,setSeeMore] = useState(20);
+
   function switchBlog(data){
     setShowBlog(data)
   }
@@ -131,7 +133,7 @@ export default function Blog() {
         <section className="blog-item-container" style={{padding: "0px"}}>
 
         {
-          blogData.map(function(item){
+          blogData.slice(0,seeMore).map(function(item){
             if (item.type === "large"){
               return <HugeBlogItem switchBlog={switchBlog} key={item._id} data={item}/>
             }else{
@@ -142,7 +144,8 @@ export default function Blog() {
           })
         }
 
-        </section>          
+        </section>
+
         }
 
         {
@@ -152,7 +155,13 @@ export default function Blog() {
 
         {
          (showBlog == "") && 
-        <div className="gotop">
+        <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}} className="gotop">
+          {
+            (blogData.length > seeMore) &&
+            <div>
+              <button style={{border: "none",outline:"none",padding:"5px 20px",textTransform:"capitalize", fontSize:"14px",fontWeight:"400",borderRadius:"5px",color:"white",backgroundColor:"rgba(0, 0, 0, 0.758)"}} onClick={()=>{setSeeMore(seeMore+20)}} type="button">see more</button>
+            </div>
+          }
           <a href="#topBlog"><i className="fa fa-angle-up"></i></a>
         </div>
         }

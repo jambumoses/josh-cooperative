@@ -15,8 +15,11 @@ import image10 from "../assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM.jp
 import image11 from "../assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM (2).jpeg";
 import image12 from "../assets/images/WhatsApp Image 2023-03-12 at 1.47.16 PM.jpeg";
 import image13 from "../assets/images/WhatsApp Image 2023-03-12 at 1.47.12 PM.jpeg";
+import { useSelector } from "react-redux";
 
 export default function HomeService() {
+
+  const serviceData = useSelector(state=>state.constant.data.services);
   
   useEffect(()=>{
     Aos.init({duration: 2000});
@@ -30,41 +33,19 @@ export default function HomeService() {
       </p>
 
       <div className="home-service-container">
-        <div data-aos="fade-up" className="home-service-item">
-          <h5>fruits & vegitables</h5>
-          <span>
-          we deliver fresh farm produce fruits and vegitables to our esteemed
-        customers, Our team members are farm and horticulture
-          </span>
-          <div><img src={image4} alt="" /></div>
-        </div>
-
-        <div data-aos="fade-up" className="home-service-item">
-          <h5>fruits & vegitables</h5>
-          <span>
-          we deliver fresh farm produce fruits and vegitables to our esteemed
-        customers, Our team members are farm and horticulture
-          </span>
-          <div><img src={image5} alt="" /></div>
-        </div>
-
-        <div data-aos="fade-up" className="home-service-item">
-          <h5>fruits & vegitables</h5>
-          <span>
-          we deliver fresh farm produce fruits and vegitables to our esteemed
-        customers, Our team members are farm and horticulture
-          </span>
-          <div><img src={image6} alt="" /></div>
-        </div>
-
-        <div data-aos="fade-up" className="home-service-item">
-          <h5>fruits & vegitables</h5>
-          <span>
-          we deliver fresh farm produce fruits and vegitables to our esteemed
-        customers, Our team members are farm and horticulture
-          </span>
-          <div><img src={image7} alt="" /></div>
-        </div>
+        {
+          serviceData.map(function(item){
+            return(
+              <div data-aos="fade-up" className="home-service-item">
+                <h5>{item.title}</h5>
+                <span>
+                {item.description}
+                </span>
+                <div><img src={require("../assets/images/services/"+item.image)} alt="" /></div>
+              </div>
+            )
+          })
+        }
       </div>
 
       <div>

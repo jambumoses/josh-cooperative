@@ -4,6 +4,7 @@ import galleryData from "../data/gallery.json";
 import merchantData from "../data/merchant.json";
 import brandsData from "../data/Brands.json";
 import membersData from "../data/members.json";
+import servicesData from "../data/services.json";
 
 const constantSlice = createSlice({
     name: "constant",
@@ -17,7 +18,8 @@ const constantSlice = createSlice({
             blog: blogData,
             gallery: galleryData,
             brands: brandsData,
-            members: membersData
+            members: membersData,
+            services: servicesData 
         },
 
     },

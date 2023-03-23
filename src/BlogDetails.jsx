@@ -133,12 +133,12 @@ export default function BlogDetails({setShowBlog,item}) {
     <>
       <section id='topBlog'>
         <div className="blogBanner-image">
-          <img src={banner} alt="" />
+          <img src={`${require("./assets/images/blog/"+item.image)}`} alt="" />
         </div>
         <section className="blogBanner-section">
 
           <div className="blogBanner-title">
-            <h3>Blog name and picture</h3>
+            <h3 style={{fontFamily:"poppins, sans-serif",fontSize:"50px",textTransform:"capitalize"}}>{item.title}</h3>
           </div>
           
           <nav>
@@ -164,7 +164,7 @@ export default function BlogDetails({setShowBlog,item}) {
         <BlogDetails/>
 
         <div className="gotop" style={{display: "flex",flexDirection: "row", justifyContent: "space-between"}}>
-          <span onClick={()=>setShowBlog("")} style={{backgroundColor:"lightgray", padding:"5px 20px",borderRadius:"5px", cursor:"pointer"}}><i className="fa fa-arrow-left"></i></span>
+          <span onClick={()=>setShowBlog("")} style={{backgroundColor:"black ", padding:"5px 20px",borderRadius:"5px", cursor:"pointer",color:"white"}}><i style={{color:"white",textTransform:"capitalize"}} className="fa fa-arrow-left"></i> back</span>
           <a href="#topBlog"><i className="fa fa-angle-up"></i></a>
         </div>
 

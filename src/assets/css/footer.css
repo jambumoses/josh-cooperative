@@ -147,6 +147,7 @@
 .footer-right-item-news-item {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 20px;
 }
 
@@ -175,6 +176,7 @@
   font-size: 14px;
   font-family: poppins, sans-serif;
   border-top: 1px solid rgba(192, 192, 192, 0.144);
+  margin-top: 10px;
 }
 
 .foot-note-rights {
