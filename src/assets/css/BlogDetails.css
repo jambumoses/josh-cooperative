@@ -7,23 +7,119 @@
 
 .blogDetails-section main{
     width: 70%;
-    background-color: lightblue;
+    background-color: transparent;
+    padding-right: 70px;
 }
+
+
+.blogDetails-title{
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+.blogDetails-by-time{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+    font-family: poppins, sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: grey;
+    margin-top: -10px;
+    padding: 20px 0px;
+    padding-left: 0px;
+    padding-top: 30px;
+}
+
+.blogDetails-by-time span{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.blogDetails-by-time .by{
+    font-size: 10px;
+    font-family: poppins, sans-serif;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.685);
+}
+
+.blogDetails-paragraph{
+    font-size: 16px;
+    font-family: poppins, sans-serif;
+    color: rgba(0, 0, 0, 0.836);
+}
+
+.blogDetails-headings{
+    text-transform: capitalize;
+    padding: 20px 0px;
+    padding-top: 50px;
+    font-size: 30px;
+    background-color: transparent;
+    width: 70%;
+    text-decoration: none;
+    color: black;
+}
+
+.blogDetails-images{
+    display: block;
+    background-color: transparent;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.blogDetails-images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blogDetails-ads{
+    background-color: lightblue;
+    height: 100px;
+    width: 100%;
+    margin: 10px 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blogDetails-ads .close-ad{
+    display: block;
+    position: relative;
+    background-color: transparent;
+    float: right;
+    margin: 2px 10px;
+}
+
+.blogDetails-ads .close-ad i{
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.685);
+    cursor: pointer;
+}
+
+.blogDetails-ads .close-ad i:hover{
+    color: red;
+}
+
+
 
 .blogDetails-section aside{
     width: 30%;
-    background-color: lightgreen;
+    background-color: transparent;
 }
 
 .aside-header{
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.253);
     display: flex;
+    flex-direction: row;
     padding-left: 20px;
     font-size: 18px;
     text-transform: capitalize;
     font-family: poppins, sans-serif;
     font-weight: 500;
     color: green;
+
 }
 
 .aside-header i{
@@ -37,5 +133,39 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 20px;
+    padding-top: 30px;
+}
+
+.blog-item-detail{
+    background-color: transparent;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.blog-item-title-detail{
+    text-align: left;
+}
+
+
+
+
+
+
+
+.related-section{
+    background-color: transparent;
+    padding: 50px 0px;
+}
+
+.related-section-heading{
+    background-color: rgba(211, 211, 211, 0.253);
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px;
+    padding-left: 20px;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-family: poppins, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.685);
 }

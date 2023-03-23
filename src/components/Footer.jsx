@@ -14,15 +14,21 @@ export default function Footer() {
     Aos.init({duration: 2000});
   },[]);
 
-  const currentPage = useSelector(state=>state.constant.currentPage)
+  const currentPage = useSelector(state=>state.constant.currentPage);
+  const merchantData = useSelector(state=>state.constant.data.merchant);
+  const BrandsData = useSelector(state=>state.constant.data.brands);
+
 
   function FooterPartner(){
     return(
       <section className='footerPartners'>
-        <div><img src={naads} alt="" /></div>
-        <div><img src={naads} alt="" /></div>
-        <div><img src={naads} alt="" /></div>
-        <div><img src={naads} alt="" /></div>
+        {
+          BrandsData.slice(0,4).map(function(item){
+            return(
+              <div key={item._id}><img src={`${require("../assets/images/brands/"+item.logo)}`} alt="" /></div>
+            )
+          })
+        }
       </section>
     )
   }
@@ -39,7 +45,7 @@ export default function Footer() {
       <footer>
         <div className='footer-company-description'>
           <span className='logo' style={{}}><img src={logo} alt="logo" /></span>
-          <span className='footer-company-description-note'>ongongoja fruit growers cooperative society ltd was founded in 2012 by a group of farmers who were engaged in fruit growing , to look for market for their products.</span>
+          <span className='footer-company-description-note'>{merchantData.company.description}</span>
         </div>
         
         <div className='footer-right'>
@@ -70,11 +76,13 @@ export default function Footer() {
               <span className='footer-right-item-news-item'>
                 <span className='footer-right-item-news-item-head'>follow us</span>
                 <span className='footer-right-item-news-item-date'>
-                  <a href="" style={{textDecoration:"none"}}><i style={{textDecoration:"none", color:"lightgray",marginRight:"10px"}} className="fab fa-twitter"></i></a>
-                  <a href="" style={{textDecoration:"none"}}><i style={{textDecoration:"none", color:"lightgray",marginRight:"10px"}} className="fab fa-facebook"></i></a>
-                  <a href="" style={{textDecoration:"none"}}><i style={{textDecoration:"none", color:"lightgray",marginRight:"10px"}} className="fab fa-instagram"></i></a>
-                  <a href="" style={{textDecoration:"none"}}><i style={{textDecoration:"none", color:"lightgray",marginRight:"10px"}} className="fab fa-linkedin"></i></a>
-                  <a href="" style={{textDecoration:"none"}}><i style={{textDecoration:"none", color:"lightgray",marginRight:"10px"}} className="fab fa-youtube"></i></a>
+                  {
+                  merchantData.socials.map(function(item){
+                    return(
+                      <a href={item.link} key={item._id} style={{textDecoration:"none"}}><i style={{textDecoration:"none", color:"lightgray",marginRight:"10px"}} className={item.icon}></i></a>
+                    )
+                  })
+                  }
                 </span>
               </span>
             </div>
@@ -83,20 +91,16 @@ export default function Footer() {
           <div className='footer-right-item'>
             <span className='footer-right-item-heading'></span>
             <div className='footer-right-item-news'>
-              <span className='footer-right-item-news-item'>
-                <span className='footer-right-item-news-item-head'>address</span>
-                <span className='footer-right-item-news-item-date'>located at Abarata Keere Weekly Market, Okuda Trading Center, Ongongoja Sub-County Katakwi District Eastern Uganda.</span>
-              </span>
-              
-              <span className='footer-right-item-news-item'>
-                <span className='footer-right-item-news-item-head'>email</span>
-                <span className='footer-right-item-news-item-date'>ongongojafruitgrowers2023@gmail.com</span>
-              </span>
-
-              <span className='footer-right-item-news-item'>
-                <span className='footer-right-item-news-item-head'>phone</span>
-                <span className='footer-right-item-news-item-date'>0782612565 / 0775166159</span>
-              </span>
+              {
+               merchantData.contact.slice(0,3).map(function(item){
+                return(
+                  <span className='footer-right-item-news-item'>
+                    <span className='footer-right-item-news-item-head'>{item.title}</span>
+                    <span className='footer-right-item-news-item-date'>{item.link}</span>
+                  </span>
+                )
+               }) 
+              }
             </div>
           </div>
         </div>
@@ -106,9 +110,9 @@ export default function Footer() {
             <span className='footer-company-description-policies-border'>privacy</span>
             <span>legal policy</span>
           </span>
-        <div className='foot-note-rights'>copy @ right all rights reserved 2012 - 2023</div>
+        <div className='foot-note-rights'>copy @ right all rights reserved 2012 - {new Date().getFullYear()}</div>
         <div>terms & conditions . policies</div>
-        <div className='foot-note-company'>ongongoja.org</div>
+        <div className='foot-note-company'>{merchantData.company.domain}</div>
       </div>
     </section>
   )

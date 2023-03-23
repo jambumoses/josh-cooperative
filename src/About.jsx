@@ -16,6 +16,13 @@ export default function About() {
   dispatch(constantActions.updatePageTitles(companyName+" . "+"About us")); // company name here
   dispatch(constantActions.setCurrentPage("About"));
 
+  const BrandsData = useSelector(state=>state.constant.data.brands);
+
+  const membersData = useSelector((state) => state.constant.data.members);
+
+  const membersCount = useSelector((state) => state.constant.data.members.count);
+
+
   useEffect(()=>{
     Aos.init({duration: 2000});
   },[]);
@@ -58,7 +65,7 @@ export default function About() {
           <div className="vison-summary-item">
             <h5 data-aos="fade-up">our community <br /> <span>with over</span></h5>
             <span className="vison-summary-item-count-container" data-aos="fade-up">
-                <span className="vison-summary-item-count">200k</span>
+                <span className="vison-summary-item-count">{membersCount.female + membersCount.male + membersCount.youth + membersCount.disabilities}k</span>
                  <span className="vison-summary-item-count-title">members</span>
             </span>
           </div>
@@ -218,10 +225,13 @@ through membership education, sensitization to achieve better welfare.
             </p>
 
             <div className="aboutsponsors-section">
-              <div data-aos="fade-up" className="aboutsponsors-item"><img src="" alt="" /></div>
-              <div data-aos="fade-up" className="aboutsponsors-item"><img src="" alt="" /></div>
-              <div data-aos="fade-up" className="aboutsponsors-item"><img src="" alt="" /></div>
-              <div data-aos="fade-up" className="aboutsponsors-item"><img src="" alt="" /></div>
+              {
+                BrandsData.map(function(item){
+                  return(
+                    <div data-aos="fade-up" className="aboutsponsors-item"><img src={`${require("./assets/images/brands/"+item.logo)}`} alt="" /></div>
+                  )
+                })
+              }
             </div>
 
 
@@ -397,9 +407,9 @@ market with storage capacity of 1000 tones .This will be used as a central point
           </p>
         </section>
 
-        <OurFarmers />
+        <OurFarmers title={membersData.board_title} subtitle={membersData.board_subtitle} note={membersData.board_note} members={membersData.board} />
 
-        <OurFarmers />
+        <OurFarmers title={membersData.members_title} subtitle={membersData.members_subtitle} note={membersData.members_note} members={membersData.members} />
 
   </section>
   );

@@ -2,6 +2,8 @@ import {createSlice} from "@reduxjs/toolkit";
 import blogData from "../data/blog.json";
 import galleryData from "../data/gallery.json";
 import merchantData from "../data/merchant.json";
+import brandsData from "../data/Brands.json";
+import membersData from "../data/members.json";
 
 const constantSlice = createSlice({
     name: "constant",
@@ -13,7 +15,9 @@ const constantSlice = createSlice({
         data: {
             merchant: merchantData,
             blog: blogData,
-            gallery: galleryData
+            gallery: galleryData,
+            brands: brandsData,
+            members: membersData
         },
 
     },

@@ -4,7 +4,88 @@ import { Link } from 'react-router-dom';
 import { constantActions } from './store/constantSlice';
 import banner from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM (1).jpeg";
 
+export function BlogItemAside({data,style}){
+  return(
+    <div className="blog-item blog-item-detail" style={{...style}}>
+        <span className="blog-item-thumbnail"><img src={`${require("./assets/images/blog/"+data.image)}`} alt="" /></span>
+        <span className="blog-item-title blog-item-title-detail">{data.title }</span>
+        <span className="blog-item-date"><span className="by">BY <span>{data.by}</span></span> <span className="time"><i className="fa fa-clock"></i> {data.created_at}</span></span>
+        <span className="blog-item-note">{data.short_note.slice(0,200)}...</span>
+    </div>
+  )
+}
+
+
+
+
+
+
+export function PageDetails({data}){
+  return(
+    <>
+      <h1 className='blogDetails-title'>{data.title}</h1>
+      <div className='blogDetails-by-time'>
+        <span><i className="fa fa-clock"></i> {data.created_at}</span>
+        <span>by <span className='by'>{data.by}</span></span>
+      </div>
+      <hr />
+
+      <div className='blogDetails-ads'>
+        <span className='close-ad'><i className="fa fa-close"></i></span>
+      </div>
+      
+      {
+        data.content.map(function(item){
+          return(
+            <>
+              {
+                (item.subtitle != "") &&
+                <>
+                  <h3 className='blogDetails-headings'>{item.subtitle}</h3>
+                  <hr />
+                </>
+              }
+              
+              {
+                (item.image != "") &&
+                <span className='blogDetails-images'>
+                  <img src={`${require("./assets/images/blog/"+data.image)}`} alt="" />
+                </span> 
+              }
+
+              {
+                item.paragraphs.map(function(paragraph){
+                  return(
+                    <p className='blogDetails-paragraph' key={paragraph._id}>{paragraph.p}</p>
+                  )
+                })
+              }
+
+              <div className='blogDetails-ads'>
+                <span className='close-ad'><i className="fa fa-close"></i></span>
+              </div>
+              
+            </>
+          )
+        })
+      }
+      
+    </>
+  )
+}
+
+
+
+
+
+
+
+
+
 export default function BlogDetails() {
+
+    const blogData = useSelector(state=>state.constant.data.blog);
+
     const dispatch = useDispatch();
     const companyName = useSelector(state=>state.constant.companyTitle)
   
@@ -13,7 +94,7 @@ export default function BlogDetails() {
 
   return (
     <>
-      <section>
+      <section id='topBlog'>
         <div className="blogBanner-image">
           <img src={banner} alt="" />
         </div>
@@ -45,19 +126,30 @@ export default function BlogDetails() {
 
         <section className='blogDetails-section'>
             <main>
-                main
-                <section>related</section>
+                <section>
+                  {
+                    <PageDetails data={blogData[0]}/>
+                  }
+                </section>
+
+                <div>
+                  comments section
+                </div>
             </main>
 
             <aside>
                 <span className='aside-header'>new <i className="fa fa-fire"></i> </span>
                 <section className='aside-container'>
-                    <div className="blog-item">
-                        <span className="blog-item-thumbnail"><img src="" alt="" /></span>
-                        <span className="blog-item-title">organic farming revert back</span>
-                        <span className="blog-item-date"><span className="by">BY <span>THE HOOKUP</span></span> <span className="time"><i className="fa fa-clock"></i> 06/08/2021 7:56 PM</span></span>
-                        <span className="blog-item-note">advocating an acute reduction in the consumpption of factory-farmed meat, fish, eggs, and dairy by encouraging</span>
-                    </div>
+                  {
+                    blogData.slice(0,(blogData.length > 5)? 7 : blogData.length).map(function(item){
+                      if (item.id != 12 && item.short_note != ""){
+                        return(
+                          <BlogItemAside key={item._id} data={item}/>
+                        )
+                      }
+                    })
+              
+                  }
                 </section>
             </aside>
         </section>

@@ -32,6 +32,8 @@ export default function HomePage() {
   dispatch(constantActions.updatePageTitles(companyName + " . " + "Home")); // company name here
   dispatch(constantActions.setCurrentPage("Home"));
 
+  const membersData = useSelector((state) => state.constant.data.members);
+
   return (
     <>
       <HomeBanner />
@@ -60,7 +62,7 @@ export default function HomePage() {
 
       <HomeWhySection />
       <WhatINspiresUs />
-      <OurFarmers />
+      <OurFarmers title={membersData.board_title} subtitle={membersData.board_subtitle} note={membersData.board_note} members={membersData.board} />
       <MembersCount />
       <Partners />
     </>

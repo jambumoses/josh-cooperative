@@ -1,9 +1,11 @@
 {
   "company": {
-    "id": "",
-    "name": "",
-    "description": "",
-    "created_year": "",
+    "_id": 102,
+    "name": "ongongoja",
+    "domain": "ongongoja.org",
+    "description": "Ongongoja Fruit Growers Cooperative Society Ltd Was Founded In 2012 By A Group Of Farmers Who Were Engaged In Fruit Growing , To Look For Market For Their Products.",
+    "created_year": "2012",
+    "mapURL": "https://maps.google.com/maps?q=african%20queen&t=&z=11&ie=UTF8&iwloc=&output=embed",
 
     "logo": {
       "footer": "",
@@ -11,20 +13,64 @@
       "nav": ""
     }
   },
+
   "socials": [
     {
-      "id": "",
-      "title": "",
-      "icon": "",
-      "link": ""
+      "_id": 1,
+      "title": "twitter",
+      "icon": "fab fa-twitter",
+      "link": "https://www.twitter.com/"
+    },
+    {
+      "_id": 2,
+      "title": "facebook",
+      "icon": "fab fa-facebook",
+      "link": "https://www.facebook.com/"
+    },
+    {
+      "_id": 3,
+      "title": "instagram",
+      "icon": "fab fa-instagram",
+      "link": "https://www.instagram.com/"
+    },
+    {
+      "_id": 4,
+      "title": "linkedin",
+      "icon": "fab fa-linkedin",
+      "link": "https://www.linkedin.com/"
+    },
+    {
+      "_id": 5,
+      "title": "youtube",
+      "icon": "fab fa-youtube",
+      "link": "https://www.youtube.com/"
     }
   ],
+
   "contact": [
     {
-        "id": "",
-        "title": "",
-        "icon": "",
-        "link": ""
+      "_id": 3,
+      "title": "phone",
+      "icon": "fa fa-phone",
+      "link": "0782612565 / 0775166159"
+    },
+    {
+      "_id": 2,
+      "title": "email",
+      "icon": "fa fa-envelope",
+      "link": "ongongojafruitgrowers2023@gmail.com"
+    },
+    {
+      "_id": 1,
+      "title": "address",
+      "icon": "fa fa-location-dot",
+      "link": "Located At Abarata Keere Weekly Market, Okuda Trading Center, Ongongoja Sub-County Katakwi District Eastern Uganda."
+    },
+    {
+      "_id": 4,
+      "title": "whatsup",
+      "icon": "fab fa-whatsup",
+      "link": "0782612565 / 0775166159"
     }
   ]
 }

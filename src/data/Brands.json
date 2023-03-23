@@ -1,0 +1,22 @@
+[
+    {
+        "_id":1,
+        "name": "naads",
+        "logo": "naads.png"
+    },
+    {
+        "_id":2,
+        "name": "naads",
+        "logo": "naads.png"
+    },
+    {
+        "_id":3,
+        "name": "naads",
+        "logo": "naads.png"
+    },
+    {
+        "_id":4,
+        "name": "naads",
+        "logo": "naads.png"
+    }
+]

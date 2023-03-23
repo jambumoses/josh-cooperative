@@ -15,6 +15,8 @@ export default function Contact() {
     dispatch(constantActions.updatePageTitles(companyName+" . "+"Contact Us")); // company name here
     dispatch(constantActions.setCurrentPage("Contact"));
 
+  const merchantData = useSelector(state=>state.constant.data.merchant);
+
     useEffect(()=>{
         Aos.init({duration: 2000});
       },[]);
@@ -22,7 +24,7 @@ export default function Contact() {
   return (
     <section>
         <div className="contactBanner-image">
-            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=african%20queen&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            <iframe id="gmap_canvas" src={merchantData.company.mapURL} frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
             </iframe>
         </div>
         <section className="contactBanner-section">
@@ -33,11 +35,13 @@ export default function Contact() {
         
         <nav>
             <div className='nav-socials'>
-                <a href=""><i className="fab fa-twitter"></i></a>
-                <a href=""><i className="fab fa-facebook"></i></a>
-                <a href=""><i className="fab fa-instagram"></i></a>
-                <a href=""><i className="fab fa-linkedin"></i></a>
-                <a href=""><i className="fab fa-youtube"></i></a>
+                {
+                    merchantData.socials.map(function(item){
+                        return(
+                            <a href={item.link} key={item._id}><i className={item.icon}></i></a>
+                        )
+                    })
+                }
             </div>
             <div>
                 <span><Link to="/" className="a" href="">home </Link></span>.
@@ -52,29 +56,17 @@ export default function Contact() {
 
 
         <section className='contactInformation-section'>
-            <div data-aos="fade-up" className='contactInformation-item'>
-                <span className='contactInformation-item-icon'><i className="fa fa-phone"></i></span>
-                <span className='contactInformation-item-title'>phone</span>
-                <span className='contactInformation-item-content'>0782612565 / <br /> 0775166159</span>
-            </div>
-
-            <div data-aos="fade-up" className='contactInformation-item contactInformation-item-email'>
-                <span className='contactInformation-item-icon'><i className="fa fa-envelope"></i></span>
-                <span className='contactInformation-item-title'>Email</span>
-                <span className='contactInformation-item-content'>ongongojafruitgrowers2023<br/>@gmail.Com</span>
-            </div>
-
-            <div data-aos="fade-up" className='contactInformation-item'>
-                <span className='contactInformation-item-icon'><i className="fa fa-location-dot"></i></span>
-                <span className='contactInformation-item-title'>address</span>
-                <span className='contactInformation-item-content'>Abarata Keere Weekly Market, Okuda Trading Center, Ongongoja Sub-County Katakwi District Eastern Uganda.</span>
-            </div>
-
-            <div data-aos="fade-up" className='contactInformation-item'>
-                <span className='contactInformation-item-icon'><i className="fa fa-phone"></i></span>
-                <span className='contactInformation-item-title'>whatsUp</span>
-                <span className='contactInformation-item-content'>0775166159 / <br />  0775166159</span>
-            </div>
+            {
+                merchantData.contact.map(function(item){
+                    return(
+                        <div key={item._id} data-aos="fade-up" className='contactInformation-item'>
+                            <span className='contactInformation-item-icon'><i className={item.icon}></i></span>
+                            <span className='contactInformation-item-title'>{item.title}</span>
+                            <span className='contactInformation-item-content'>{item.link}</span>
+                        </div>
+                    )
+                })
+            }
         </section>
 
         <section className='offices-section'>
@@ -138,7 +130,7 @@ export default function Contact() {
         </section>
 
         <section className="contact-map-section">
-            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=african%20queen&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+            <iframe id="gmap_canvas" src={merchantData.company.mapURL} frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
             </iframe>
         </section>
     </section>

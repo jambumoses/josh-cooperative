@@ -1,0 +1,76 @@
+{
+  "board_title": "Board Committe Members",
+  "board_subtitle": "ongongoja cooperative",
+  "board_note": "we deliver fresh farm produce fruits and vegitables to our esteemed customers, our team members are farm and horticulture",
+  "board": [
+    {
+      "_id": 1,
+      "image": "user.png",
+      "name": "engole gabriel",
+      "role": "chairperson",
+      "description": "he oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic"
+    },
+    {
+      "_id": 2,
+      "image": "user.png",
+      "name": "aturo joshua",
+      "role": "vice chairperson",
+      "description": "he oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic"
+    },
+    {
+      "_id": 3,
+      "image": "user.png",
+      "name": "esau joseph",
+      "role": "secretary",
+      "description": "he oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic"
+    },
+    {
+      "_id": 4,
+      "image": "user.png",
+      "name": "mr. engole ocaatum faucet arthur",
+      "role": "formmer chairperson",
+      "description": "he oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic"
+    }
+  ],
+
+  "members_title": "Board Committe Members",
+  "members_subtitle": "ongongoja cooperative",
+  "members_note": "we deliver fresh farm produce fruits and vegitables to our esteemed customers, our team members are farm and horticulture",
+  "members": [
+    {
+      "_id": 1,
+      "image": "user.png",
+      "name": "engole gabriel",
+      "role": "chairperson",
+      "description": "he oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic"
+    },
+    {
+      "_id": 2,
+      "image": "user.png",
+      "name": "aturo joshua",
+      "role": "vice chairperson",
+      "description": "he oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic"
+    },
+    {
+      "_id": 3,
+      "image": "user.png",
+      "name": "esau joseph",
+      "role": "secretary",
+      "description": "he oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic"
+    },
+    {
+      "_id": 4,
+      "image": "user.png",
+      "name": "mr. engole ocaatum faucet arthur",
+      "role": "formmer chairperson",
+      "description": "he oversees the success of the strategic vision of the cooperative to ensure that it achieves the overall objective of the economic"
+    }
+  ],
+
+  "count": {
+    "female": 318,
+    "male": 212,
+    "youth": 150,
+    "disabilities": 5
+  }
+}
