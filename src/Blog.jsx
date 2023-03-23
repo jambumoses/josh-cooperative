@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import banner from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM (1).jpeg";
 
@@ -18,12 +18,12 @@ import image13 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.12 PM.jpe
 
 import { useDispatch, useSelector } from "react-redux";
 import { constantActions } from "./store/constantSlice";
+import BlogDetails from "./BlogDetails";
 
-function switchBlog(data){
-    alert(data.id)
-}
 
-export function BlogItem({data}){
+
+
+export function BlogItem({data,switchBlog}){
   return(
     <div className="blog-item">
       <span className="blog-item-details">
@@ -47,7 +47,7 @@ export function BlogItem({data}){
 }
 
 
-export function HugeBlogItem({data}){
+export function HugeBlogItem({data,switchBlog}){
   return(
     <div className="blog-item-huge">
       <span className="blog-item-huge-thumbnail"><img src={`${require("./assets/images/blog/"+data.image)}`} alt="" /></span>
@@ -80,57 +80,82 @@ export default function Blog() {
   dispatch(constantActions.updatePageTitles(companyName+" . "+"Blog")); // company name here
   dispatch(constantActions.setCurrentPage("Blog"));
 
+  const [showBlog,setShowBlog] = useState("")
+
+  function switchBlog(data){
+    setShowBlog(data)
+  }
+
   return (
     <>
       <section>
-        <div className="blogBanner-image">
+
+        {
+          (showBlog == "") &&
+          <>
+          <div className="blogBanner-image">
           <img src={banner} alt="" />
-        </div>
-        <section className="blogBanner-section" id="topBlog">
-
-          <div className="blogBanner-title">
-            <h3>Blog</h3>
           </div>
-          
-          <nav>
-          <div className='nav-socials'>
-                <a href=""><i className="fab fa-twitter"></i></a>
-                <a href=""><i className="fab fa-facebook"></i></a>
-                <a href=""><i className="fab fa-instagram"></i></a>
-                <a href=""><i className="fab fa-linkedin"></i></a>
-                <a href=""><i className="fab fa-youtube"></i></a>
-            </div>
+          <section className="blogBanner-section" id="topBlog">
 
-            <div>
-              <span><Link to="/" className="a" href="">home </Link></span>.
-              <span><Link to="/blog" className="a active" href="">blog</Link></span>.
-              <span><Link to="/about" className="a" href="">about us </Link></span>.
-              {/* <span><Link to="/services" className="a" href="">services</Link></span>. */}
-              <span><Link to="/gallery" className="a" href="">gallery</Link></span>.
-              <span><Link to="/contact" className="a" href="">contact us</Link></span>
+            <div className="blogBanner-title">
+              <h3>Blog</h3>
             </div>
-          </nav>
-        </section>
+            
+            <nav>
+            <div className='nav-socials'>
+                  <a href=""><i className="fab fa-twitter"></i></a>
+                  <a href=""><i className="fab fa-facebook"></i></a>
+                  <a href=""><i className="fab fa-instagram"></i></a>
+                  <a href=""><i className="fab fa-linkedin"></i></a>
+                  <a href=""><i className="fab fa-youtube"></i></a>
+              </div>
 
-        <section className="blog-item-container">
+              <div>
+                <span><Link to="/" className="a" href="">home </Link></span>.
+                <span><Link to="/blog" className="a active" href="">blog</Link></span>.
+                <span><Link to="/about" className="a" href="">about us </Link></span>.
+                {/* <span><Link to="/services" className="a" href="">services</Link></span>. */}
+                <span><Link to="/gallery" className="a" href="">gallery</Link></span>.
+                <span><Link to="/contact" className="a" href="">contact us</Link></span>
+              </div>
+            </nav>
+          </section>  
+          </>
+        }
+
+
+
+        {
+        (showBlog == "") &&
+        <section className="blog-item-container" style={{padding: "0px"}}>
 
         {
           blogData.map(function(item){
             if (item.type === "large"){
-              return <HugeBlogItem key={item._id} data={item}/>
+              return <HugeBlogItem switchBlog={switchBlog} key={item._id} data={item}/>
             }else{
             return(
               
-              <BlogItem key={item._id} data={item}/>
+              <BlogItem switchBlog={switchBlog} key={item._id} data={item}/>
             )}
           })
         }
 
-        </section>
+        </section>          
+        }
 
+        {
+          (showBlog != "") &&
+          <BlogDetails item={showBlog} setShowBlog={setShowBlog}/>
+        }
+
+        {
+         (showBlog == "") && 
         <div className="gotop">
           <a href="#topBlog"><i className="fa fa-angle-up"></i></a>
         </div>
+        }
 
       </section>
     </>

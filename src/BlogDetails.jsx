@@ -82,7 +82,7 @@ export function PageDetails({data}){
 
 
 
-export default function BlogDetails() {
+export default function BlogDetails({setShowBlog,item}) {
 
     const blogData = useSelector(state=>state.constant.data.blog);
 
@@ -91,6 +91,43 @@ export default function BlogDetails() {
   
     dispatch(constantActions.updatePageTitles(companyName+" . "+"Blog name")); // company name here
     dispatch(constantActions.setCurrentPage("Blog Details"));
+
+
+    function BlogDetails(){
+      return(
+        <section className='blogDetails-section' style={{padding: "50px"}}>
+            <main>
+                <section>
+                <span onClick={()=>setShowBlog("")} style={{backgroundColor:"lightgray", padding:"5px 20px",borderRadius:"5px", cursor:"pointer"}}><i className="fa fa-arrow-left"></i> back</span>
+
+                  {
+                    <PageDetails data={item}/>
+                  }
+                </section>
+
+                <div>
+                  comments section
+                </div>
+            </main>
+
+            <aside>
+                <span className='aside-header'>new <i className="fa fa-fire"></i> </span>
+                <section className='aside-container'>
+                  {
+                    blogData.slice(0,(blogData.length > 5)? 7 : blogData.length).map(function(item){
+                      if (item.id != 12 && item.short_note != ""){
+                        return(
+                          <BlogItemAside key={item._id} data={item}/>
+                        )
+                      }
+                    })
+              
+                  }
+                </section>
+            </aside>
+        </section>
+      )
+    }
 
   return (
     <>
@@ -124,37 +161,10 @@ export default function BlogDetails() {
           </nav>
         </section>
 
-        <section className='blogDetails-section'>
-            <main>
-                <section>
-                  {
-                    <PageDetails data={blogData[0]}/>
-                  }
-                </section>
+        <BlogDetails/>
 
-                <div>
-                  comments section
-                </div>
-            </main>
-
-            <aside>
-                <span className='aside-header'>new <i className="fa fa-fire"></i> </span>
-                <section className='aside-container'>
-                  {
-                    blogData.slice(0,(blogData.length > 5)? 7 : blogData.length).map(function(item){
-                      if (item.id != 12 && item.short_note != ""){
-                        return(
-                          <BlogItemAside key={item._id} data={item}/>
-                        )
-                      }
-                    })
-              
-                  }
-                </section>
-            </aside>
-        </section>
-
-        <div className="gotop">
+        <div className="gotop" style={{display: "flex",flexDirection: "row", justifyContent: "space-between"}}>
+          <span onClick={()=>setShowBlog("")} style={{backgroundColor:"lightgray", padding:"5px 20px",borderRadius:"5px", cursor:"pointer"}}><i className="fa fa-arrow-left"></i></span>
           <a href="#topBlog"><i className="fa fa-angle-up"></i></a>
         </div>
 
