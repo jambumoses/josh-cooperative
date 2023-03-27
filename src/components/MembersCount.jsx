@@ -45,10 +45,10 @@ export default function MembersCount() {
             <h5 data-aos="fade-up">Get free membership</h5>
             <span data-aos="fade-up" className='Home-membership-section-subtitle'>join our communitte with over</span>
             <div data-aos="fade-up" className='Home-membership-count-section'>
-                <div> <span id="countNumber">{membersData.female}</span> <span>female</span></div>
-                <div> <span id="countNumber">{membersData.male}</span> <span>male</span></div>
-                <div> <span id="countNumber">{membersData.youth}</span> <span>youth</span></div>
-                <div> <span id="countNumber">{membersData.disabilities}</span> <span>disabilities</span></div>
+                <div data-aos="fade-up"> <span id="countNumber">{membersData.female}</span> <span>female</span></div>
+                <div data-aos="fade-up"> <span id="countNumber">{membersData.male}</span> <span>male</span></div>
+                <div data-aos="fade-up"> <span id="countNumber">{membersData.youth}</span> <span>youth</span></div>
+                <div data-aos="fade-up"> <span id="countNumber">{membersData.disabilities}</span> <span>disabilities</span></div>
             </div>
             <button data-aos="fade-up" type='button'>
                 join today

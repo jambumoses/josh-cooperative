@@ -1,133 +1,291 @@
-.HomeWhySection-heading{
-    display: flex;
-    padding: 2% 5%;
-    padding-top: 100px;
-    text-transform: capitalize;
-    font-size: 50px;
-    text-decoration: underline;
-    color: rgba(0, 0, 0, 0.664);
-    color: gray;
-    background-color: rgba(211, 211, 211, 0.13);
-    background-color: black;
+/* computer screen */
+
+@media (min-width: 950px) {
+    .HomeWhySection-heading{
+        display: flex;
+        padding: 2% 5%;
+        padding-top: 100px;
+        text-transform: capitalize;
+        font-size: 50px;
+        text-decoration: underline;
+        color: rgba(0, 0, 0, 0.664);
+        color: gray;
+        background-color: rgba(211, 211, 211, 0.13);
+        background-color: beige;
+    }
+    
+    .HomeWhySection-heading .head{
+        display: block;
+    }
+    
+    .HomeWhySection-heading .quot{
+        color: darkred;
+        position: absolute;
+        font-size: 100px;
+        margin-left: 460px;
+        margin-top: -50px;
+        transform: rotateZ(30deg);
+        font-family: poppins, sans-serif;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
+    }
+    
+    .HomeWhySection{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        background-color: rgba(211, 211, 211, 0.13);
+        background-color: beige;
+        /* height: 500px; */
+        padding: 5%;
+    }
+    
+    .HomeWhySection-right{
+        width: 50%;
+        background-color: transparent;
+    }
+    
+    .HomeWhySection-left{
+        background-color: transparent;
+        width: 50%;
+        height: 400px;
+    }
+    
+    .HomeWhySection-left img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .why-item{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        background-color: transparent;
+        width: 40%;
+        /* height: 90%; */
+    /*     border-radius: 5px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.26);
+        border: 1px solid rgba(128, 128, 128, 0.26); */
+    }
+    
+    .why-item .y-icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        height: 35%;
+        color: grey;
+    }
+    
+    .y-icon-thumbnail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        height: 100%;
+        width: 39%;
+    }
+    
+    .y-icon-thumbnail i{
+        color: grey;
+        font-size: 30px;
+    }
+    
+    .why-item .y-title{
+        display: block;
+        color: green;
+        background-color: transparent;
+        padding-top: 5px;
+        padding: 0px 30px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: bold;
+        height: 17%;
+        padding: 5px 0px;
+    }
+    
+    .why-item .y-description{
+        display: block;
+        height: 40%;
+        color: rgb(155, 155, 155);
+        text-transform: capitalize;
+        text-align: center;
+        padding: 0px 30px;
+        font-size: 13px;
+    }
+    
+    .why-top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        height: 50%;
+        width: 100%;
+    }
+    
+    
+    .why-bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        height: 50%;
+        width: 100%;
+    }
 }
 
-.HomeWhySection-heading .head{
-    display: block;
-}
-
-.HomeWhySection-heading .quot{
-    color: darkred;
-    position: absolute;
-    font-size: 100px;
-    margin-left: 460px;
-    margin-top: -50px;
-    transform: rotateZ(30deg);
-    font-family: poppins, sans-serif;
-    font-weight: bold;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
-}
-
-.HomeWhySection{
-    display: flex;
-    flex-direction: row;
-    background-color: rgba(211, 211, 211, 0.13);
-    background-color: black;
-    height: 500px;
-    padding: 5%;
-}
-
-.HomeWhySection-right{
-    width: 50%;
-    background-color: transparent;
-}
-
-.HomeWhySection-left{
-    background-color: transparent;
-    width: 50%;
-    height: 100%;
-}
-
-.HomeWhySection-left img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.why-item{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    background-color: black;
-    width: 40%;
-    height: 90%;
-    border-radius: 5px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.26);
-    border: 1px solid rgba(128, 128, 128, 0.26);
-}
-
-.why-item .y-icon{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: transparent;
-    height: 35%;
-    color: grey;
-}
-
-.y-icon-thumbnail{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: transparent;
-    height: 100%;
-    width: 39%;
-}
-
-.y-icon-thumbnail i{
-    color: grey;
-    font-size: 30px;
-}
-
-.why-item .y-title{
-    display: block;
-    color: lightgrey;
-    background-color: transparent;
-    padding-top: 5px;
-    padding: 0px 30px;
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 20px;
-    height: 17%;
-}
-
-.why-item .y-description{
-    display: block;
-    height: 40%;
-    color: grey;
-    text-transform: capitalize;
-    text-align: center;
-    padding: 0px 30px;
-    font-size: 13px;
-}
-
-.why-top{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: transparent;
-    height: 50%;
-    width: 100%;
-}
 
 
-.why-bottom{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: transparent;
-    height: 50%;
-    width: 100%;
+
+
+
+
+/* mobile screen */
+
+@media (max-width: 950px) {
+    .HomeWhySection-heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5% 5%;
+        padding-top: 100px;
+        text-transform: capitalize;
+        font-size: 50px;
+        text-decoration: underline;
+        color: rgba(0, 0, 0, 0.664);
+        color: gray;
+        background-color: rgba(211, 211, 211, 0.13);
+        background-color: beige;
+    }
+    
+    .HomeWhySection-heading .head{
+        display: block;
+    }
+    
+    .HomeWhySection-heading .quot{
+        color: darkred;
+        position: absolute;
+        font-size: 100px;
+        margin-left: 460px;
+        margin-top: -50px;
+        transform: rotateZ(30deg);
+        font-family: poppins, sans-serif;
+        font-weight: bold;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.459);
+    }
+    
+    .HomeWhySection{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        background-color: rgba(211, 211, 211, 0.13);
+        background-color: beige;
+        /* height: 500px; */
+        padding: 5%;
+    }
+    
+    .HomeWhySection-right{
+        width: 100%;
+        background-color: transparent;
+        margin-bottom: 100px;
+    }
+    
+    .HomeWhySection-left{
+        background-color: transparent;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .HomeWhySection-left img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .why-item{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        background-color: transparent;
+        width: 40%;
+        margin: 30px 0px;
+        /* height: 90%; */
+    /*     border-radius: 5px;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.26);
+        border: 1px solid rgba(128, 128, 128, 0.26); */
+    }
+    
+    .why-item .y-icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: transparent;
+        height: 35%;
+        color: grey;
+    }
+    
+    .y-icon-thumbnail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        height: 100%;
+        width: 39%;
+    }
+    
+    .y-icon-thumbnail i{
+        color: grey;
+        font-size: 30px;
+    }
+    
+    .why-item .y-title{
+        display: block;
+        color: green;
+        background-color: transparent;
+        padding-top: 5px;
+        padding: 0px 30px;
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: bold;
+        height: 17%;
+        padding: 5px 0px;
+    }
+    
+    .why-item .y-description{
+        display: block;
+        height: 40%;
+        color: rgb(155, 155, 155);
+        text-transform: capitalize;
+        text-align: center;
+        padding: 0px 30px;
+        font-size: 13px;
+    }
+    
+    .why-top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        height: 50%;
+        width: 100%;
+    }
+    
+    
+    .why-bottom{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: transparent;
+        height: 50%;
+        width: 100%;
+    }
 }

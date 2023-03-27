@@ -1,6 +1,8 @@
+@media (min-width: 1000px) {
+ 
 .home-suppermarket{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     padding: 50px 5%;
     padding-bottom: 100px;
@@ -34,8 +36,8 @@
 }
 
 .home-suppermarket-right p{
-    padding: 20px 0px;
-    padding-right: 200px;
+    padding: 10px 0px;
+    padding-right: 50px;
     color: grey;
 }
 
@@ -56,4 +58,146 @@
     color: grey;
     border: 1px solid grey;
     /* transition: 0.2s linear; */
+}   
 }
+
+
+
+
+
+/* tablet screen */
+
+@media (max-width: 1000px) {
+ 
+    .home-suppermarket{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 50px 5%;
+        padding-bottom: 100px;
+        background-color: wheat;
+        background-color: black;
+    }
+    
+    .home-suppermarket-left{
+        background-color: transparent;
+        width: 40%;
+    }
+    
+    .home-suppermarket-left img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .home-suppermarket-right{
+        width: 50%;
+    }
+    
+    .home-suppermarket-right span{
+        font-size: 50px;
+        padding-right: 100px;
+        text-transform: capitalize;
+        font-family: poppins, sans-serif;
+        text-align: left;
+        color: lightgray;
+        color: green;
+    }
+    
+    .home-suppermarket-right p{
+        padding: 10px 0px;
+        padding-right: 0px;
+        color: grey;
+    }
+    
+    .home-suppermarket-right button{
+        padding: 10px 20px;
+        border: 2px solid rgba(0, 0, 0, 0.712);
+        color: black;
+        border-radius: 5px;
+        text-transform: capitalize;
+        font-size: 13px;
+        font-weight: initial;
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+    
+    .home-suppermarket-right button:hover{
+        background-color: rgba(0, 0, 0, 0.712);
+        color: grey;
+        border: 1px solid grey;
+        /* transition: 0.2s linear; */
+    }   
+    }
+
+
+
+
+
+    
+/* mobile screen */
+
+@media (max-width: 700px) {
+ 
+    .home-suppermarket{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 50px 5%;
+        padding-bottom: 100px;
+        background-color: wheat;
+        background-color: black;
+    }
+    
+    .home-suppermarket-left{
+        background-color: transparent;
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .home-suppermarket-left img{
+        display: none;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+    
+    .home-suppermarket-right{
+        width: 100%;
+    }
+    
+    .home-suppermarket-right span{
+        font-size: 50px;
+        padding-right: 100px;
+        text-transform: capitalize;
+        font-family: poppins, sans-serif;
+        text-align: left;
+        color: lightgray;
+        color: green;
+    }
+    
+    .home-suppermarket-right p{
+        padding: 5px 0px;
+        padding-right: 150px;
+        color: grey;
+    }
+    
+    .home-suppermarket-right button{
+        padding: 10px 20px;
+        border: 2px solid rgba(0, 0, 0, 0.712);
+        color: black;
+        border-radius: 5px;
+        text-transform: capitalize;
+        font-size: 13px;
+        font-weight: initial;
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+    
+    .home-suppermarket-right button:hover{
+        background-color: rgba(0, 0, 0, 0.712);
+        color: grey;
+        border: 1px solid grey;
+        /* transition: 0.2s linear; */
+    }   
+    }

@@ -1,72 +1,250 @@
-.Home-membership-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-    padding: 5%;
-    padding-top: 20px;
-    padding-bottom: 100px;
+/* computer screen */
+
+@media (min-width: 1000px) {
+    .Home-membership-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: black;
+        padding: 5%;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+    
+    .Home-membership-section h5{
+        font-size: 50px;
+        text-transform: capitalize;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        color: lightgray;
+        color: green;
+    }
+    
+    .Home-membership-section-subtitle{
+        text-transform: capitalize;
+        font-size: 15px;
+        margin-top: 0px;
+        margin: 10px;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        color: grey;
+    }
+    
+    .Home-membership-count-section{
+        display: flex;
+        flex-direction: row;
+        padding: 50px 0px;
+    }
+    
+    .Home-membership-count-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: -webkit-linear-gradient(320deg,lightgray,black);
+        background: transparent;
+        margin: 20px;
+        color: white;
+        height: 80px;
+        width: 170px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: grey;
+        text-transform: uppercase;
+    }
+    
+    .Home-membership-section button{
+        border: none;
+        outline: none;
+        padding: 5px 20px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: grey;
+        background-color: transparent;
+        border: 1px solid silver;
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+    
+    .Home-membership-section button:hover{
+        color: lightgray;
+        transition: 0.2s linear;
+    }
+    
 }
 
-.Home-membership-section h5{
-    font-size: 50px;
-    text-transform: capitalize;
-    font-family: poppins, sans-serif;
-    font-weight: 500;
-    color: lightgray;
-    color: green;
+
+
+
+
+/* tablet screen */
+
+@media (max-width: 1000px) {
+    .Home-membership-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: beige;
+        padding: 5%;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+    
+    .Home-membership-section h5{
+        font-size: 50px;
+        text-transform: capitalize;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        color: lightgray;
+        color: green;
+        text-align: center;
+    }
+    
+    .Home-membership-section-subtitle{
+        text-transform: capitalize;
+        font-size: 15px;
+        margin-top: 0px;
+        margin: 10px;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        color: grey;
+    }
+    
+    .Home-membership-count-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: transparent;
+        padding: 50px 100px;
+    }
+    
+    .Home-membership-count-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: -webkit-linear-gradient(320deg,lightgray,black);
+        background: transparent;
+        margin: 40px 20px;
+        color: white;
+        height: 80px;
+        width: 30%;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: grey;
+        text-transform: uppercase;
+    }
+    
+    .Home-membership-section button{
+        border: none;
+        outline: none;
+        padding: 5px 20px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: grey;
+        background-color: transparent;
+        border: 1px solid silver;
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+    
+    .Home-membership-section button:hover{
+        color: lightgray;
+        transition: 0.2s linear;
+    }
+    
 }
 
-.Home-membership-section-subtitle{
-    text-transform: capitalize;
-    font-size: 15px;
-    margin-top: 0px;
-    margin: 10px;
-    font-family: poppins, sans-serif;
-    font-weight: 500;
-    color: grey;
-}
 
-.Home-membership-count-section{
-    display: flex;
-    flex-direction: row;
-    padding: 50px 0px;
-}
 
-.Home-membership-count-section div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: -webkit-linear-gradient(320deg,lightgray,black);
-    background: transparent;
-    margin: 20px;
-    color: white;
-    height: 80px;
-    width: 170px;
-    border-radius: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: grey;
-    text-transform: uppercase;
-}
 
-.Home-membership-section button{
-    border: none;
-    outline: none;
-    padding: 5px 20px;
-    text-transform: capitalize;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: grey;
-    background-color: transparent;
-    border: 1px solid silver;
-    cursor: pointer;
-    transition: 0.2s linear;
-}
 
-.Home-membership-section button:hover{
-    color: lightgray;
-    transition: 0.2s linear;
+
+
+/* mobile screen */
+
+@media (max-width: 500px) {
+    .Home-membership-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: beige;
+        padding: 5%;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+    
+    .Home-membership-section h5{
+        font-size: 50px;
+        text-transform: capitalize;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        color: lightgray;
+        color: green;
+    }
+    
+    .Home-membership-section-subtitle{
+        text-transform: capitalize;
+        font-size: 15px;
+        margin-top: 0px;
+        margin: 10px;
+        font-family: poppins, sans-serif;
+        font-weight: 500;
+        color: grey;
+    }
+    
+    .Home-membership-count-section{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: transparent;
+        padding: 50px 100px;
+    }
+    
+    .Home-membership-count-section div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: -webkit-linear-gradient(320deg,lightgray,black);
+        background: transparent;
+        margin: 40px 40px;
+        color: white;
+        height: 80px;
+        width: 30%;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: grey;
+        text-transform: uppercase;
+    }
+    
+    .Home-membership-section button{
+        border: none;
+        outline: none;
+        padding: 5px 20px;
+        text-transform: capitalize;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: bold;
+        color: grey;
+        background-color: transparent;
+        border: 1px solid silver;
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+    
+    .Home-membership-section button:hover{
+        color: lightgray;
+        transition: 0.2s linear;
+    }
+    
 }

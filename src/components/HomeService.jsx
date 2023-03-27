@@ -36,7 +36,7 @@ export default function HomeService() {
         {
           serviceData.map(function(item){
             return(
-              <div data-aos="fade-up" className="home-service-item">
+              <div key={item._id} data-aos="fade-up" className="home-service-item">
                 <h5>{item.title}</h5>
                 <span>
                 {item.description}

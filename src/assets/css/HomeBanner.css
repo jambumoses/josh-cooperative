@@ -1,143 +1,335 @@
-.home-logo{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  background-color: transparent;
-  width: 100%;
-  height: 60vh;
-  z-index: 2;
+/* computer screen */
+
+@media (min-width: 1000px) {
+  .home-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 60vh;
+    z-index: 2;
+  }
+  
+  .home-logo span{
+    display: block;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin-top:-60px;
+  }
+  
+  
+  .home-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .homeBanner {
+    background-color: lightgoldenrodyellow;
+    height: 100vh;
+  }
+  
+  .homeBanner-blur{
+    position: absolute;
+    background: -webkit-linear-gradient(bottom, black,rgba(0, 0, 0, 0.658));
+    background: -webkit-linear-gradient(bottom,black,rgba(0, 0, 0, 0.418));
+    height: 60vh;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .HomeBanner-image{
+    position: absolute;
+    background-color: lightblue;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .HomeBanner-image-thumb{
+    background-color: lightcoral;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .HomeBanner-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .homebanner-about {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+    background-color: beige;
+    padding: 5% 7%;
+    padding-top: 50px;
+  }
+
+  .homebanner-about-blog{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+    background-color: beige;
+    padding: 5% 7%;
+    padding-top: 50px;
+  }
+
+  .homebanner-about-blog .homebanner-about-small-note{
+    width: 70%;
+  }
+  
+  .homebanner-about-floating-image {
+    background-color: transparent;
+    height: 400px;
+    width: 100%;
+    /* margin-top: -250px; */
+    border-radius: 10px;
+    /* box-shadow: 0px 5px 20px rgba(58, 58, 58, 0.486); */
+  }
+  
+  .homebanner-about-floating-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .homebanner-about-small-note {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: transparent;
+    padding: 50px 70px;
+    border-radius: 10px;
+  }
+  
+  .homebanner-about-small-note .sub-title {
+    display: block;
+    text-transform: capitalize;
+    color: grey;
+    font-size: 16px;
+  }
+  
+  .homebanner-about-small-note .title {
+    color: lightgrey;
+    color: green;
+    font-size: 30px;
+    padding-top: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: poppins;
+  }
+  
+  .homebanner-about-small-note p {
+    text-transform: capitalize;
+    color: rgb(58, 58, 58);
+    color: grey;
+    padding-top: 30px;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  
+  .homebanner-about-small-note button {
+    display: inline-block;
+    /* width: 200px; */
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    color: grey;
+    border: none;
+    background-color: beige;
+    border: 1px solid grey;
+    border: 1px solid green;
+    color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+  .homebanner-about-small-note button:hover {
+    transition: 0.3s linear;
+    color: grey;
+  }
+   
 }
 
-.home-logo span{
-  display: block;
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  margin-top:-60px;
-}
 
 
-.home-logo img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
 
-.homeBanner {
-  background-color: lightgoldenrodyellow;
-  height: 100vh;
-}
 
-.homeBanner-blur{
-  position: absolute;
-  background: -webkit-linear-gradient(bottom, black,rgba(0, 0, 0, 0.658));
-  background: -webkit-linear-gradient(bottom,black,rgba(0, 0, 0, 0.418));
-  height: 60vh;
-  width: 100%;
-  z-index: 2;
-}
 
-.HomeBanner-image{
-  position: absolute;
-  background-color: lightblue;
-  width: 100%;
-  height: 60vh;
-}
 
-.HomeBanner-image-thumb{
-  background-color: lightcoral;
-  width: 100%;
-  height: 60vh;
-}
 
-.HomeBanner-image img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.homebanner-about {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgb(245, 245, 245);
-  background-color: black;
-  padding: 5% 7%;
-  padding-top: 50px;
-}
+/* tablet screen */
 
-.homebanner-about-floating-image {
-  background-color: transparent;
-  height: 400px;
-  width: 40vw;
-  /* margin-top: -250px; */
-  border-radius: 10px;
-  /* box-shadow: 0px 5px 20px rgba(58, 58, 58, 0.486); */
-}
+@media (max-width: 1000px) {
+  .home-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: transparent;
+    width: 100%;
+    height: 60vh;
+    z-index: 2;
+  }
+  
+  .home-logo span{
+    display: block;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin-top:-60px;
+  }
+  
+  
+  .home-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .homeBanner {
+    background-color: lightgoldenrodyellow;
+    height: 100vh;
+  }
+  
+  .homeBanner-blur{
+    position: absolute;
+    background: -webkit-linear-gradient(bottom, black,rgba(0, 0, 0, 0.658));
+    background: -webkit-linear-gradient(bottom,black,rgba(0, 0, 0, 0.418));
+    height: 60vh;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .HomeBanner-image{
+    position: absolute;
+    background-color: lightblue;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .HomeBanner-image-thumb{
+    background-color: lightcoral;
+    width: 100%;
+    height: 60vh;
+  }
+  
+  .HomeBanner-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .homebanner-about {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+    background-color: beige;
+    padding: 5% 7%;
+    padding-top: 50px;
+  }
 
-.homebanner-about-floating-image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+  .homebanner-about-blog{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: auto;
+    background-color: beige;
+  }
 
-.homebanner-about-small-note {
-  display: flex;
-  flex-direction: column;
-  width: 40vw;
-  background-color: transparent;
-  padding: 50px 70px;
-  border-radius: 10px;
-}
+  .homebanner-about-blog .homebanner-about-floating-image{
+    width: 100%;
+  }
 
-.homebanner-about-small-note .sub-title {
-  display: block;
-  text-transform: capitalize;
-  color: grey;
-  font-size: 16px;
-}
-
-.homebanner-about-small-note .title {
-  color: lightgrey;
-  color: green;
-  font-size: 30px;
-  padding-top: 5px;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-family: poppins;
-}
-
-.homebanner-about-small-note p {
-  text-transform: capitalize;
-  color: rgb(58, 58, 58);
-  color: grey;
-  padding-top: 30px;
-  font-size: 15px;
-  padding-bottom: 20px;
-}
-
-.homebanner-about-small-note button {
-  display: inline-block;
-  width: 200px;
-  padding: 10px 15px;
-  text-transform: capitalize;
-  font-size: 15px;
-  font-family: poppins, sans-serif;
-  font-weight: 500;
-  color: grey;
-  border: none;
-  background-color: black;
-  border: 2px solid grey;
-  border: 2px solid green;
-  color: green;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s linear;
-}
-
-.homebanner-about-small-note button:hover {
-  transition: 0.3s linear;
-  color: grey;
+  .homebanner-about-blog .homebanner-about-small-note{
+    width: 100%;
+  }
+  
+  .homebanner-about-floating-image {
+    background-color: transparent;
+    height: 400px;
+    width: 100%;
+    /* margin-top: -250px; */
+    border-radius: 10px;
+    /* box-shadow: 0px 5px 20px rgba(58, 58, 58, 0.486); */
+  }
+  
+  .homebanner-about-floating-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .homebanner-about-small-note {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: transparent;
+    padding: 50px 70px;
+    border-radius: 10px;
+  }
+  
+  .homebanner-about-small-note .sub-title {
+    display: block;
+    text-transform: capitalize;
+    color: grey;
+    font-size: 16px;
+  }
+  
+  .homebanner-about-small-note .title {
+    color: lightgrey;
+    color: green;
+    font-size: 30px;
+    padding-top: 5px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-family: poppins;
+  }
+  
+  .homebanner-about-small-note p {
+    text-transform: capitalize;
+    color: rgb(58, 58, 58);
+    color: grey;
+    padding-top: 30px;
+    font-size: 15px;
+    padding-bottom: 20px;
+  }
+  
+  .homebanner-about-small-note button {
+    display: inline-block;
+    
+    padding: 5px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+    color: grey;
+    border: none;
+    background-color: beige;
+    border: 1px solid grey;
+    border: 1px solid green;
+    color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  
+  .homebanner-about-small-note button:hover {
+    transition: 0.3s linear;
+    color: grey;
+  }
+   
 }

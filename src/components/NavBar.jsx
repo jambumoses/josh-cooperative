@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   return (
-    <>
+/*     <>
       <nav className='navbar'>
         <div>
           <span className='navbar-mobile-logo'><img src="" alt="" /></span>
@@ -35,6 +35,9 @@ export default function NavBar() {
           <span className='navbar-right-socials'><i className="fab fa-youtube"></i></span>
         </div>
       </nav>
+    </> */
+
+    <>
     </>
   )
 }

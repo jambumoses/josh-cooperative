@@ -39,7 +39,7 @@ export default function HomePage() {
       <HomeBanner />
       <HomeService />
 
-      <section className="homebanner-about" style={{flexDirection:"row-reverse"}}>
+      <section className="homebanner-about homebanner-about-blog" style={{flexDirection:"row-reverse"}}>
         <div data-aos="fade-up" className="homebanner-about-floating-image">
           <img src={blogimage} alt="" />
         </div>

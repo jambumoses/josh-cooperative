@@ -94,7 +94,7 @@ export default function Footer() {
               {
                merchantData.contact.slice(0,3).map(function(item){
                 return(
-                  <span className='footer-right-item-news-item'>
+                  <span className='footer-right-item-news-item' key={item._id}>
                     <span className='footer-right-item-news-item-head'>{item.title}</span>
                     <span className='footer-right-item-news-item-date'>{item.link}</span>
                   </span>
