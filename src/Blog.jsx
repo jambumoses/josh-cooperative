@@ -2,23 +2,10 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import banner from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM (1).jpeg";
 
-import image1 from "./assets/images/apple.jpeg";
-import image2 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.12 PM (1).jpeg";
-import image3 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.12 PM (2).jpeg";
-import image4 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.13 PM (1).jpeg";
-import image5 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.13 PM (2).jpeg";
-import image6 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.16 PM (1).jpeg";
-import image7 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.15 PM.jpeg";
-import image8 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.15 PM (2).jpeg";
-import image9 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.15 PM (1).jpeg";
-import image10 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM.jpeg";
-import image11 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM (2).jpeg";
-import image12 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.16 PM.jpeg";
-import image13 from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.12 PM.jpeg";
-
 import { useDispatch, useSelector } from "react-redux";
 import { constantActions } from "./store/constantSlice";
 import BlogDetails from "./BlogDetails";
+import NavBar from "./components/NavBar";
 
 
 
@@ -91,41 +78,7 @@ export default function Blog() {
   return (
     <>
       <section>
-
-        {
-          (showBlog == "") &&
-          <>
-          <div className="blogBanner-image">
-          <img src={banner} alt="" />
-          </div>
-          <section className="blogBanner-section" id="topBlog">
-
-            <div className="blogBanner-title">
-              <h3>Blog</h3>
-            </div>
-            
-            <nav>
-            <div className='nav-socials'>
-                  <a href=""><i className="fab fa-twitter"></i></a>
-                  <a href=""><i className="fab fa-facebook"></i></a>
-                  <a href=""><i className="fab fa-instagram"></i></a>
-                  <a href=""><i className="fab fa-linkedin"></i></a>
-                  <a href=""><i className="fab fa-youtube"></i></a>
-              </div>
-
-              <div>
-                <span><Link to="/" className="a" href="">home </Link></span>.
-                <span><Link to="/blog" className="a active" href="">blog</Link></span>.
-                <span><Link to="/about" className="a" href="">about us </Link></span>.
-                {/* <span><Link to="/services" className="a" href="">services</Link></span>. */}
-                <span><Link to="/gallery" className="a" href="">gallery</Link></span>.
-                <span><Link to="/contact" className="a" href="">contact us</Link></span>
-              </div>
-            </nav>
-          </section>  
-          </>
-        }
-
+        <NavBar showBlog={showBlog}/>
 
 
         {

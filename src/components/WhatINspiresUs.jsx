@@ -16,7 +16,7 @@ export default function WhatINspiresUs() {
       </span>
       <section className="HomeWhySection">
         <div data-aos="fade-up" className="HomeWhySection-left">
-          <img src="" alt="" />
+          <img src={require("../assets/images/leigh-skomal-cUJc1mb3KVg-unsplash.jpg")} alt="" />
         </div>
 
         <div className="HomeWhySection-right">

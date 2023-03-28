@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import $ from "jquery";
 import math from "math";
+import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 export default function MembersCount() {
@@ -51,7 +52,7 @@ export default function MembersCount() {
                 <div data-aos="fade-up"> <span id="countNumber">{membersData.disabilities}</span> <span>disabilities</span></div>
             </div>
             <button data-aos="fade-up" type='button'>
-                join today
+                <Link to="/contact" style={{textDecoration:"none",color:"grey"}}>join today</Link>
             </button>
         </section>
     </>

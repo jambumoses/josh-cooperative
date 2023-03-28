@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import banner from "./assets/images/WhatsApp Image 2023-03-12 at 1.47.14 PM (1).jpeg";
 import { constantActions } from './store/constantSlice';
 import contactImage from "./assets/images/undraw_wind_turbine_x-2-k4.svg";
+import NavBar, { ContactNav } from "./components/NavBar";
 
 export default function Contact() {
 
@@ -23,37 +24,7 @@ export default function Contact() {
 
   return (
     <section>
-        <div className="contactBanner-image">
-            <iframe id="gmap_canvas" src={merchantData.company.mapURL} frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-            </iframe>
-        </div>
-        <section className="contactBanner-section">
-
-        <div className="contactBanner-title">
-            <h3>contact us</h3>
-        </div>
-        
-        <nav>
-            <div className='nav-socials'>
-                {
-                    merchantData.socials.map(function(item){
-                        return(
-                            <a href={item.link} key={item._id}><i className={item.icon}></i></a>
-                        )
-                    })
-                }
-            </div>
-            <div>
-                <span><Link to="/" className="a" href="">home </Link></span>.
-                <span><Link to="/blog" className="a" href="">blog</Link></span>.
-                <span><Link to="/about" className="a" href="">about us </Link></span>.
-                {/* <span><Link to="/services" className="a" href="">services</Link></span>. */}
-                <span><Link to="/gallery" className="a" href="">gallery</Link></span>.
-                <span><Link to="/contact" className="a active" href="">contact us</Link></span>
-            </div>
-        </nav>
-        </section>
-
+        <NavBar/>
 
         <section className='contactInformation-section'>
             {

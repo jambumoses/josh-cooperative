@@ -7,6 +7,7 @@ import { constantActions } from "./store/constantSlice";
 import { useDispatch, useSelector } from "react-redux";
 
 import OurFarmers from "./components/OurFarmers";
+import NavBar from "./components/NavBar";
 
 export default function About() {
 
@@ -29,37 +30,8 @@ export default function About() {
 
   return (
   <section>
-        <div className="aboutBanner-blur"></div>
+        <NavBar/>
         
-        <div className="blogBanner-image">
-          <img src={banner} alt="" />
-        </div>
-        <section className="blogBanner-section">
-
-          <div className="blogBanner-title">
-            <h3>About Us</h3>
-          </div>
-          
-          <nav>
-          <div className='nav-socials'>
-                <a href=""><i className="fab fa-twitter"></i></a>
-                <a href=""><i className="fab fa-facebook"></i></a>
-                <a href=""><i className="fab fa-instagram"></i></a>
-                <a href=""><i className="fab fa-linkedin"></i></a>
-                <a href=""><i className="fab fa-youtube"></i></a>
-            </div>
-
-            <div>
-              <span><Link to="/" className="a" href="">home </Link></span>.
-              <span><Link to="/blog" className="a" href="">blog</Link></span>.
-              <span><Link to="/about" className="a active" href="">about us </Link></span>.
-              {/* <span><Link to="/services" className="a" href="">services</Link></span>. */}
-              <span><Link to="/gallery" className="a" href="">gallery</Link></span>.
-              <span><Link to="/contact" className="a" href="">contact us</Link></span>
-            </div>
-          </nav>
-        </section>
-
         <section className="vison-summary-section">
           <section className="vison-summary-section-left">
           <div className="vison-summary-item">
