@@ -117,6 +117,7 @@
         display: block;
         /* padding: 10px 0px;
         width: 30%; */
+        text-align: center;
     }
     
     .contactInformation-item-icon i{
@@ -456,6 +457,7 @@
         display: block;
         /* padding: 10px 0px;
         width: 30%; */
+        text-align: center;
     }
     
     .contactInformation-item-icon i{

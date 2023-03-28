@@ -111,7 +111,7 @@ export default function BlogDetails({setShowBlog,item}) {
             </main>
 
             <aside>
-                <span className='aside-header'>new <i className="fa fa-fire"></i> </span>
+                <span className='aside-header'>related blogs<i className="fa fa-fire"></i> </span>
                 <section className='aside-container'>
                   {
                     blogData.slice(0,(blogData.length > 5)? 7 : blogData.length).map(function(item){
